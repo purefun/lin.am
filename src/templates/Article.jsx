@@ -57,7 +57,7 @@ export default function ArticlePage({ data, pageContext }) {
   return (
     <Page
       context={pageContext}
-      title="Article:"
+      title={title}
     >
       <Article>
         <Header>

@@ -12,7 +12,7 @@ const ListWrapper = styled.div`
 export default function Category({ data, pageContext }) {
   const { allMdx } = data
   return (
-    <Page context={pageContext} title="Category: ">
+    <Page context={pageContext} title={pageContext.category}>
       <ListWrapper>
         <ArticleList nodes={allMdx.edges} />
       </ListWrapper>

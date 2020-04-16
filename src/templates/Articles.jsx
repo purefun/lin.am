@@ -41,7 +41,7 @@ export default function Articles({ data, pageContext }) {
   const { allMdx } = data
   const { currentPage, hasPreviousPage, hasNextPage, pageCount } = allMdx.pageInfo
   return (
-    <Page context={pageContext} title="Articles">
+    <Page context={pageContext} title="Home">
       <ListWrapper>
         <ArticleList nodes={allMdx.edges} />
 
