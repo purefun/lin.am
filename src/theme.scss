@@ -11,9 +11,10 @@ html[color-scheme=light] {
   --color-title:               #14192D;
   --color-logo:                #14192D;
   --color-category:            #14192D;
-  --color-md-link-border: #DADDEC;
+  --color-nprogress:           #14192D;
+  --color-md-link-border:      #DADDEC;
 
-  --color-sun: #F8C86E;
+  --color-sun:                 #F8C86E;
 }
 
 html[color-scheme=dark] {
@@ -29,7 +30,8 @@ html[color-scheme=dark] {
   --color-logo:                #D8E2FB;
   --color-category:            #D8E2FB;
   --color-pagination-enabled:  #D8E2FB;
-  --color-md-link-border: #7885A1;
+  --color-md-link-border:      #7885A1;
+  --color-nprogress:           #D8E2FB;
 
-  --color-moon: #FFFFFF;
+  --color-moon:                #FFFFFF;
 }
