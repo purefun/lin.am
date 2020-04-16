@@ -1,0 +1,20 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "google",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "rules": {
+    "require-jsdoc": "off"
+  },
+  "globals": {
+    "document": true,
+    "getComputedStyle": true
+  },
+  "env": {
+    "node": true
+  }
+}
