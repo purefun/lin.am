@@ -16,6 +16,8 @@ const Article = styled.article`
 
 const Header = styled.header`
   text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
 `
 
 const Title = styled.h1`

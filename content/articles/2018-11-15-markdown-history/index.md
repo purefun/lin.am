@@ -15,7 +15,7 @@ createdAt: 2018-11-15
 [Joyent](https://www.joyent.com/)。John Gruber 在 2002 年创建了个人博客 [Daring
 Fireball](https://daringfireball.net/)，核心内容是关于苹果公司的各类信息。为了更
 好地进行博客写作，两年后他发布了一个叫 Markdown 的工具。2006 年开始全职经营博客
-。他同时主持一档名为「[The Talk Show](https://daringfireball.net/thetalkshow/)的
+。他同时主持一档名为 [The Talk Show](https://daringfireball.net/thetalkshow/) 的
 播客节目。最近几年的 WWDC 大会期间，The Talk Show 都会邀请到苹果高管进行面对面。
 苹果高级副总裁 [Phil Schiller](https://en.wikipedia.org/wiki/Phil_Schiller) 、
 [Eddy Cue](https://en.wikipedia.org/wiki/Eddy_Cue) 、 [Craig
