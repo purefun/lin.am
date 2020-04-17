@@ -30,7 +30,7 @@ export const h1 = styled.h1`
   padding-top: 40px;
   font-size: 2em;
 
-  &:first-of-type {
+  &:first-child {
     border-top: 0;
     margin-top: 0;
   }
