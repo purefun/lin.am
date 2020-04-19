@@ -76,7 +76,7 @@ function Page({ children, context, title }) {
   return (
     <LayoutWrapper>
       <Helmet>
-        <title>{title} - opted.dev</title>
+        <title>{title} - Lin</title>
       </Helmet>
       <Responsive />
       <PageFontFace

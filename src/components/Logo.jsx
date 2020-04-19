@@ -10,5 +10,5 @@ const HomeLink = styled(Link)`
 `
 
 export default function Logo() {
-  return <HomeLink to="/">opted.dev</HomeLink>
+  return <HomeLink to="/">Lin</HomeLink>
 }
