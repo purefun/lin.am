@@ -70,7 +70,7 @@ const inlineTheme = {
 export const inlineCode = ({ children, ...otherProps }) => {
 
   // `js |> code here`
-  const [lang, sourceCode] = children.split(/\s*|>\s*/)
+  const [lang, sourceCode] = children.split(/\s*\|>\s*/g)
   const language = sourceCode ? lang : 'plain'
 
   return (

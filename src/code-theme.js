@@ -108,6 +108,11 @@ const theme = {
     style: {
       opacity: 0.7
     }
+  }, {
+    types: ["regex"],
+    style: {
+      color: colors.comment,
+    },
   }],
 };
 

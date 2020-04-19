@@ -37,7 +37,9 @@ export const wrapper = styled.div`
   }
 
   .gatsby-resp-image-background-image {
-    filter: blur(10px);
+    // filter: blur(10px);
+    border-radius: 5px;
+    display: none;
   }
 
   .footnotes {
