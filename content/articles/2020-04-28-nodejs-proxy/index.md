@@ -29,20 +29,21 @@ createdAt: 2020-04-28
 ## 实际案例
 
   [Kibana] 开发环境搭建需要 Elasticsearch，`yarn es snapshot` 会从
-  [storage.googleapis.com] 下载最新的Elasticsearch。而`storage.googleapis.com`
+  [storage.googleapis.com] 下载最新的 Elasticsearch。而 `storage.googleapis.com`
   已无法在大陆访问。查看 Kibana 源码，发现其使用 `node-fetch` 模块作为 HTTP 请求
-  客户端。但`node-fetch` 为了将 API 同浏览器的 `fetch` 保持一致，并没有加入对代
+  客户端。但 `node-fetch` 为了将 API 同浏览器的 `fetch` 保持一致，并没有加入对代
   理的支持。
 
 
 ## 工程中的通用方案
 
-  在 Node.js 中最终都需要通过委托内置模块 `http` 和 `https` 进行 HTTP 相关的请求。
-  在使用 `http[s].request(options)` 模块时，`http[s].globalAgent` 将作为
+  在 Node.js 中最终都需要通过委托内置模块 `http` 和 `https` 进行 HTTP 相关的请求
+  。在使用 `http[s].request(options)` 模块时，`http[s].globalAgent` 将作为
   `options.agent` 的默认值。以 `http.globalAgent` 为例：
 
   ```js
   // https://github.com/nodejs/node/blob/v13.12.0/lib/http.js#L83-L92
+
   ObjectDefineProperty(module.exports, 'globalAgent', {
     configurable: true,
     enumerable: true,

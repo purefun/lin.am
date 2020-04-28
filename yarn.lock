@@ -10970,10 +10970,10 @@ regjsparser@^0.6.0:
   dependencies:
     jsesc "~0.5.0"
 
-remark-join-cjk-lines@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/remark-join-cjk-lines/-/remark-join-cjk-lines-1.0.2.tgz#9eb31e5687483cb9ac6c81f609370628f225b05e"
-  integrity sha512-8hfGzWDykPttgl6kg5cbFzd8VbYkzw8fqH8NdVn14RKEiJicGgD6x5arGwbKosRJsm/f4MUqiJhJiSumIwPMpw==
+remark-join-cjk-lines@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/remark-join-cjk-lines/-/remark-join-cjk-lines-1.0.6.tgz#6bcc3c3f994572761f645a71f5cb616bc0a3b1fb"
+  integrity sha512-RbOJGm2yClycv6bI7Zi0t29iZHk2ee0JzI6+87FtbG1evycIrZHUTewdV1FxfD/zz8M2wehYwuHzln5PSJJR5Q==
   dependencies:
     unist-util-visit "^2.0.2"
 

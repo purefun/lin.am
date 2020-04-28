@@ -64,7 +64,7 @@ export default function ArticlePage({ data, pageContext }) {
           <Title fontFamily={fontFamily}>{title}</Title>
           <Meta>
             <CreatedAt>{createdAt}</CreatedAt>
-            <CategoryLink to={`/articles/category/${category}`}>
+            <CategoryLink to={`/articles/category/${category}/`}>
               {category}
             </CategoryLink>
           </Meta>
