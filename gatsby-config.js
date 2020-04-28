@@ -1,5 +1,3 @@
-const removeExtraWhiteSpace = require('./node_scripts/remove-extra-white-space')
-
 module.exports = {
   plugins: [
     {
@@ -53,7 +51,7 @@ module.exports = {
       resolve: 'gatsby-plugin-mdx',
       options: {
         extensions: ['.md', '.mdx'],
-        remarkPlugins: [removeExtraWhiteSpace],
+        remarkPlugins: [require('remark-join-cjk-lines')],
         gatsbyRemarkPlugins: [
           {
             resolve: 'gatsby-remark-copy-linked-files',
