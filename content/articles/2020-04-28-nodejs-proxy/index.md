@@ -1,6 +1,6 @@
 ---
 title: 配置 Node.js HTTP 全局代理的通用方案
-excerpt:
+excerpt: 出于不可描述的原因，如何跨越长城已是软件开发工程师的必备技能。这项技能还可以作为判断工程师获取信息的能力。
 category: Node.js
 createdAt: 2020-04-28
 ---
