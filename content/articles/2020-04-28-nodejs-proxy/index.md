@@ -66,7 +66,7 @@ createdAt: 2020-04-28
   `global-agent` 判断环境中和代理相关的变量，创建一个 `http[s].agent` 并覆盖
   `http[s].globalAgent`。
 
-  Note: `global-agent` 支持 Node.js v10 以上版本，低版本应该使用 [global-tunnel]
+  Note: `global-agent` 支持 Node.js >= v10 版本，低版本应该使用 [global-tunnel]
   。
 
 
