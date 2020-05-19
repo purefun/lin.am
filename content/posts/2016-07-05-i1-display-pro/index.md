@@ -1,10 +1,10 @@
 ---
 title: 使用 i1 Display Pro 校正多屏幕色彩
-excerpt: 
-  i1 Display Pro 是爱色丽的一款专为显示器和投影仪校色的专业硬件设备。减少多个屏
-  幕之间的色差。
-category: macOS
-createdAt: 2016-07-05
+topic: macOS
+tags:
+  - display
+  - color
+date: 2016-07-05
 ---
 
 # 色彩校正原理

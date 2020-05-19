@@ -1,10 +1,8 @@
 ---
 title: 一发布就被 App Store 精选的笔记应用 Bear for Mac & iOS
-excerpt:
-  从内测版本 Bear beta 2 一直坚持使用到 beta 4。和同类应用相比，几乎没有新的功
-  能。但所有的功能细节都认真打磨过。其中最打动我的是 Bear 的 Markdown 编辑器。
-category: App
-createdAt: 2016-11-04
+topic: App
+tags: [app]
+date: 2016-11-04
 ---
 
   从内测版本 Bear beta 2 一直坚持使用到 beta 4。和同类应用相比，几乎没有新的功能

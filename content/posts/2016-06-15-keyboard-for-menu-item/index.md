@@ -1,9 +1,10 @@
 ---
 title: Mac 上的每个菜单命令，都能自定义快捷键
-excerpt:
-  通常情况下，一个应用在 Mac 菜单栏显示的菜单命令，可以囊括了这个应用的大部分功能。同时也会为常用的菜单设置快捷键，比如最常见的「新建」功能，默认都是 Command + N。
-category: Keyboard
-createdAt: 2016-06-15
+topic: Keyboard
+tags:
+  - keyboard
+  - macOS
+date: 2016-06-15
 ---
 
 > 本文首发于少数派「一日一技」专栏：http://sspai.com/34527, 略有改动。

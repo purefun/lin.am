@@ -1,8 +1,8 @@
 ---
 title: TDD 的方式编写和重构一个函数
-excerpt: 一个简单的函数，也有单元测试覆盖它的意义。
-category: JavaScript
-createdAt: 2018-03-14
+topic: JavaScript
+tags: [JavaScript]
+date: 2018-03-14
 ---
 
   > 根据我自己 2018 年入职新公司后在团队内部第一次分享内容整理。

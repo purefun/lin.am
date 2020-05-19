@@ -1,11 +1,9 @@
 ---
 title: 如何让 Mac OS X 落灰的标记功能，焕发如它七彩般的活力
-excerpt:
-  OS X Finder 中的标记（Tags）功能，是在文件夹分类和文件名的基础上，提供全新维
-  度的文件整理和处理机制，在 WWDC 2013 上做为 OS X 10.9 Mavericks 的 10 大新功
-  能一同发布。
-category: macOS
-createdAt: 2016-06-06
+tags:
+  - finder
+date: 2016-06-06
+topic: macOS
 ---
 
   如果高效地整理电脑中的文件，是每个人都需要面对和思考的问题。大到把硬盘分几个

@@ -1,8 +1,8 @@
 ---
 title: Markdown 发展史
-excerpt: Markdown 没有一个官方标准，但已无处不在。
-category: Markdown
-createdAt: 2018-11-15
+topic: Markdown
+tags: [markdown]
+date: 2018-11-15
 ---
 
 # 主要人物

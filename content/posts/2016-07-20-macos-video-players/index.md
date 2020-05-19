@@ -1,8 +1,10 @@
 ---
 title: 七款 Mac 视频播放器横向评测
-excerpt: Movist | MPlayerX | MPV | QuickTime | SPlayerX | VLC暴风影音
-category: App
-createdAt: 2016-07-20
+topic: App
+tags:
+  - player
+  - macOS
+date: 2016-07-20
 ---
 > 本文还发布在：
   >

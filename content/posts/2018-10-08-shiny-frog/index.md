@@ -1,8 +1,9 @@
 ---
 title: 笔记应用 Bear 的开发商是怎样的一家公司
-excerpt:
-category: Others
-createdAt: 2018-10-08
+topic: App
+tags:
+  - company
+date: 2018-10-08
 ---
 
 # Shiny Frog 是一家怎样的公司？

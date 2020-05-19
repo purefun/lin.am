@@ -1,8 +1,8 @@
 ---
 title: 剥除 curl 代理返回的 HTTP Status Line
-excerpt: 从 240 个 curl 参数中找到所需要的。
-category: Shell
-createdAt: 2019-12-05
+tags: [shell]
+date: 2019-12-05
+topic: Shell
 ---
 
 问题定义

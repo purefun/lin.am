@@ -1,8 +1,9 @@
 ---
 title: 通过数据线在 Mac 上播放 iPhone 的声音
-excerpt: 为了适应不同的场景，实现同一目的，通常会采取不同的策略。
-category: macOS
-createdAt: 2016-06-11
+topic: macOS
+tags:
+  - macOS
+date: 2016-06-11
 ---
 
 > 本文首发于少数派「一日一技」专栏：http://sspai.com/34500, 略有改动。

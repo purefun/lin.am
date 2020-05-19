@@ -1,8 +1,8 @@
 ---
 title: Mac OS X 这四对全局快捷键，可以让写作聊天快得飞起来
-excerpt: 当要不断重复一个细小任务时，快捷键缩短了完成任务所需要的操作。
-category: Keyboard
-createdAt: 2016-06-02
+tags: [macOS]
+date: 2016-06-02
+topic: Keyboard
 ---
 
   > 本文首发于爱范儿 https://www.ifanr.com/app/667905 。

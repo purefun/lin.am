@@ -1,8 +1,9 @@
 ---
 title: typeof null === 'object' 的由来
-excerpt: 回到 1995 年05月，看看 Brendan Eich 用 10 天时间实现的第一版 JavaScript，以及为什么至今保留这个 Bug。
-category: JavaScript
-createdAt: 2020-01-05
+topic: JavaScript
+tags:
+  - bug
+date: 2020-01-05
 ---
 
 在分析 `typeof` 操作符的 C 代码实现之前，需要了解一个背景知识点。在 1995 年 CPU
