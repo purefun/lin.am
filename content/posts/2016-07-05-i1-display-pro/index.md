@@ -1,9 +1,6 @@
 ---
 title: 使用 i1 Display Pro 校正多屏幕色彩
 topic: macOS
-tags:
-  - display
-  - color
 date: 2016-07-05
 ---
 

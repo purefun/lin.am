@@ -1,8 +1,6 @@
 ---
 title: typeof null === 'object' 的由来
 topic: JavaScript
-tags:
-  - bug
 date: 2020-01-05
 ---
 

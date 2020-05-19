@@ -1,6 +1,5 @@
 ---
 title: Mac OS X 这四对全局快捷键，可以让写作聊天快得飞起来
-tags: [macOS]
 date: 2016-06-02
 topic: Keyboard
 ---

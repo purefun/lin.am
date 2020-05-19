@@ -12,7 +12,6 @@ export const query = graphql`
           slug
           title
           date(formatString: "MMMM DD, YYYY")
-          tags
           topic
         }
       }

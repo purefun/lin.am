@@ -1,7 +1,6 @@
 ---
 title: Markdown 发展史
 topic: Markdown
-tags: [markdown]
 date: 2018-11-15
 ---
 

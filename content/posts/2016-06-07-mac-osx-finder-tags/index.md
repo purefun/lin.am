@@ -1,7 +1,5 @@
 ---
 title: 如何让 Mac OS X 落灰的标记功能，焕发如它七彩般的活力
-tags:
-  - finder
 date: 2016-06-06
 topic: macOS
 ---

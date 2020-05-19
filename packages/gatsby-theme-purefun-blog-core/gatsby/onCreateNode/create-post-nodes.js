@@ -48,7 +48,6 @@ module.exports = async (
 
     const fieldData = {
       title: node.frontmatter.title,
-      tags: node.frontmatter.tags || [],
       slug,
       date: node.frontmatter.date,
       topic: node.frontmatter.topic,

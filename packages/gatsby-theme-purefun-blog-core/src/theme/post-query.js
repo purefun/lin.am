@@ -10,7 +10,6 @@ export const query = graphql`
       body
       slug
       title
-      tags
       date(formatString: "MMMM DD, YYYY")
       topic
     }

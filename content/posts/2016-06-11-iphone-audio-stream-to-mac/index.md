@@ -1,8 +1,6 @@
 ---
 title: 通过数据线在 Mac 上播放 iPhone 的声音
 topic: macOS
-tags:
-  - macOS
 date: 2016-06-11
 ---
 

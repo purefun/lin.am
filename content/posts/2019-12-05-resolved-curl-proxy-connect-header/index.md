@@ -1,6 +1,5 @@
 ---
 title: 剥除 curl 代理返回的 HTTP Status Line
-tags: [shell]
 date: 2019-12-05
 topic: Shell
 ---

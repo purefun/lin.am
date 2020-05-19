@@ -1,8 +1,6 @@
 ---
 title: 笔记应用 Bear 的开发商是怎样的一家公司
 topic: App
-tags:
-  - company
 date: 2018-10-08
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: TDD 的方式编写和重构一个函数
 topic: JavaScript
-tags: [JavaScript]
 date: 2018-03-14
 ---
 

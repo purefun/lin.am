@@ -1,9 +1,6 @@
 ---
 title: Mac 上的每个菜单命令，都能自定义快捷键
 topic: Keyboard
-tags:
-  - keyboard
-  - macOS
 date: 2016-06-15
 ---
 

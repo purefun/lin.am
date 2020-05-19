@@ -24,7 +24,6 @@ module.exports = ({ actions, schema }) => {
       slug: String!
       date: Date! @dateformat
       modified: Date @dateformat
-      tags: [String]!
       topic: String!
   }`)
 
@@ -41,7 +40,6 @@ module.exports = ({ actions, schema }) => {
         },
         date: { type: `Date!`, extensions: { dateformat: {} } },
         modified: { type: `Date`, extensions: { dateformat: {} } },
-        tags: { type: `[String]!` },
         topic: { type: 'String!' },
         body: {
           type: `String!`,

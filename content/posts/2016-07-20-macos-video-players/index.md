@@ -1,9 +1,6 @@
 ---
 title: 七款 Mac 视频播放器横向评测
 topic: App
-tags:
-  - player
-  - macOS
 date: 2016-07-20
 ---
 > 本文还发布在：

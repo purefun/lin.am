@@ -1,7 +1,6 @@
 ---
 title: 一发布就被 App Store 精选的笔记应用 Bear for Mac & iOS
 topic: App
-tags: [app]
 date: 2016-11-04
 ---
 

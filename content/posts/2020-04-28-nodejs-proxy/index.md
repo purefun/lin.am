@@ -1,9 +1,6 @@
 ---
 title: 配置 Node.js HTTP 全局代理的通用方案
 topic: Node
-tags:
-  - proxy
-  - fetch
 date: 2020-04-28
 ---
 

@@ -23,7 +23,6 @@ module.exports = async ({ graphql, actions, reporter }, pluginOptions) => {
           node {
             id
             slug
-            tags
           }
         }
       }
