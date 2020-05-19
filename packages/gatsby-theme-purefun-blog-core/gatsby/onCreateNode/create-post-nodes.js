@@ -1,6 +1,7 @@
 const path = require('path')
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const { urlResolve, createContentDigest } = require(`gatsby-core-utils`)
+const debug = require('debug')('purefun:blog-core')
 const withDefaults = require('../default-options')
 
 module.exports = async (
@@ -50,12 +51,12 @@ module.exports = async (
       tags: node.frontmatter.tags || [],
       slug,
       date: node.frontmatter.date,
-      keywords: node.frontmatter.keywords || [],
-      image: node.frontmatter.image,
-      socialImage: node.frontmatter.socialImage
+      topic: node.frontmatter.topic,
     }
 
-    const mdxPostId = createNodeId(`${node.id} >>> MdxPost`)
+    debug('post fields', fieldData)
+
+    const mdxPostId = createNodeId(`${node.id} >>> MdxBlogPost`)
     await createNode({
       ...fieldData,
       // Required fields.
@@ -63,10 +64,10 @@ module.exports = async (
       parent: node.id,
       children: [],
       internal: {
-        type: `MdxPost`,
+        type: `MdxBlogPost`,
         contentDigest: createContentDigest(fieldData),
         content: JSON.stringify(fieldData),
-        description: `Mdx implementation of the Post interface`,
+        description: `Mdx implementation of the BlogPost interface`,
       },
     })
     createParentChildLink({ parent: node, child: getNode(mdxPostId) })
