@@ -4,21 +4,21 @@ import styled from 'styled-components'
 import { clickable } from '../global-style'
 import { breakpoints } from '../responsive'
 
-const query = graphql`
-  query categories {
-    allMdx(
-      filter: { fields: { module: { eq: "articles" } } }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            category
-          }
-        }
-      }
-    }
-  }
-`
+// const query = graphql`
+//   query categories {
+//     allMdx(
+//       filter: { fields: { module: { eq: "articles" } } }
+//     ) {
+//       edges {
+//         node {
+//           frontmatter {
+//             category
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
 
 const CategoryWrapper = styled.div`
   display: flex;

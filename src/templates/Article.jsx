@@ -77,11 +77,11 @@ export default function ArticlePage({ data, pageContext }) {
   )
 }
 
-export const pageQuery = graphql`
-  query article($articleId: String!) {
-    mdx(id: { eq: $articleId }) {
-      ...Article
-      body
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query article($articleId: String!) {
+//     mdx(id: { eq: $articleId }) {
+//       ...Article
+//       body
+//     }
+//   }
+// `

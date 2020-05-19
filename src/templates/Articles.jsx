@@ -66,26 +66,26 @@ export default function Articles({ data, pageContext }) {
   )
 }
 
-export const query = graphql`
-  query articles($skip: Int!, $limit: Int!) {
-    allMdx(
-      sort: { fields: [frontmatter___createdAt], order: DESC }
-      skip: $skip
-      limit: $limit
-      filter: { fields: { module: { eq: "articles" } } }
-    ) {
-      edges {
-        node {
-          ...Article
-        }
-      }
-      pageInfo {
-        hasPreviousPage
-        hasNextPage
-        currentPage
-        pageCount
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query articles($skip: Int!, $limit: Int!) {
+//     allMdx(
+//       sort: { fields: [frontmatter___createdAt], order: DESC }
+//       skip: $skip
+//       limit: $limit
+//       filter: { fields: { module: { eq: "articles" } } }
+//     ) {
+//       edges {
+//         node {
+//           ...Article
+//         }
+//       }
+//       pageInfo {
+//         hasPreviousPage
+//         hasNextPage
+//         currentPage
+//         pageCount
+//       }
+//     }
+//   }
+// `
 

@@ -19,6 +19,9 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-theme-purefun-blog',
+    },
+    {
       resolve: 'gatsby-plugin-sass',
     },
     {
@@ -33,13 +36,13 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-sharp',
     },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'articles',
-        path: `${__dirname}/content/articles`,
-      }
-    },
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: 'content/posts',
+    //     path: 'content/posts',
+    //   }
+    // },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -47,55 +50,55 @@ module.exports = {
         path: `${__dirname}/src/images/`,
       }
     },
-    {
-      resolve: 'gatsby-plugin-mdx',
-      options: {
-        extensions: ['.md', '.mdx'],
-        remarkPlugins: [require('remark-join-cjk-lines')],
-        gatsbyRemarkPlugins: [
-          {
-            resolve: 'gatsby-remark-copy-linked-files',
-            options: {
-              ignoreFileExtensions: ['png', 'jpg', 'jpeg', 'bmp', 'tiff'],
-            },
-          },
-          {
-            resolve: 'gatsby-remark-images',
-            options: {
-              maxWidth: 1240,
-              linkImagesToOriginal: false,
-              showCaptions: true,
-              markdownCaptions: true,
-              quality: 80,
-              disableBgImage: false,
-            }
-          },
-        ]
-      }
-    },
-    {
-      resolve: 'gatsby-plugin-webfonts',
-      options: {
-        fonts: {
-          google: [
-            {
-              family: 'Roboto',
-              variants: ['400', '500'],
-              strategy: 'base64',
-              fontDisplay: 'swap',
-              //subsets: ['latin']
-              //text: 'Hello'
-              //strategy: 'selfHosted' // 'base64' || 'cdn'
-            },
-          ],
-        },
-        formats: ['woff2'],
-        // formats: ['woff2', 'woff'],
-        //useMinify: true,
-        //usePreload: true,
-        //usePreconnect: false,
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-mdx',
+    //   options: {
+    //     extensions: ['.md', '.mdx'],
+    //     remarkPlugins: [require('remark-join-cjk-lines')],
+    //     gatsbyRemarkPlugins: [
+    //       {
+    //         resolve: 'gatsby-remark-copy-linked-files',
+    //         options: {
+    //           ignoreFileExtensions: ['png', 'jpg', 'jpeg', 'bmp', 'tiff'],
+    //         },
+    //       },
+    //       {
+    //         resolve: 'gatsby-remark-images',
+    //         options: {
+    //           maxWidth: 1240,
+    //           linkImagesToOriginal: false,
+    //           showCaptions: true,
+    //           markdownCaptions: true,
+    //           quality: 80,
+    //           disableBgImage: false,
+    //         }
+    //       },
+    //     ]
+    //   }
+    // },
+    // {
+    //   resolve: 'gatsby-plugin-webfonts',
+    //   options: {
+    //     fonts: {
+    //       google: [
+    //         {
+    //           family: 'Roboto',
+    //           variants: ['400', '500'],
+    //           strategy: 'base64',
+    //           fontDisplay: 'swap',
+    //           // subsets: ['latin']
+    //           // text: 'Hello'
+    //           // strategy: 'selfHosted' // 'base64' || 'cdn'
+    //         },
+    //       ],
+    //     },
+    //     formats: ['woff2'],
+    //     // formats: ['woff2', 'woff'],
+    //     // useMinify: true,
+    //     // usePreload: true,
+    //     // usePreconnect: false,
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-nprogress',
       options: {

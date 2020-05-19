@@ -1,0 +1,14 @@
+{
+  "name": "gatsby-theme-purefun-blog-core",
+  "version": "1.0.0",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "gatsby-core-utils": "^1.2.3",
+    "gatsby-plugin-mdx": "^1.2.8",
+    "gatsby-remark-copy-linked-files": "^2.3.2",
+    "gatsby-remark-smartypants": "^2.3.1",
+    "gatsby-source-filesystem": "^2.3.4",
+    "mkdirp": "^1.0.4",
+    "remark-slug": "^6.0.0"
+  }
+}

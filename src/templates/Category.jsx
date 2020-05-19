@@ -20,18 +20,18 @@ export default function Category({ data, pageContext }) {
   )
 }
 
-export const query = graphql`
-  query carticlesByCategory($category: String!) {
-    allMdx(
-      sort: { fields: [frontmatter___createdAt], order: DESC },
-      filter: { frontmatter: { category: { eq: $category } } }
-    ) {
-      edges {
-        node {
-          ...Article
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query carticlesByCategory($category: String!) {
+//     allMdx(
+//       sort: { fields: [frontmatter___createdAt], order: DESC },
+//       filter: { frontmatter: { category: { eq: $category } } }
+//     ) {
+//       edges {
+//         node {
+//           ...Article
+//         }
+//       }
+//     }
+//   }
+// `
 

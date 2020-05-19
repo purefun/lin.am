@@ -6,12 +6,14 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "dev": "DEBUG=purefun* gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "dependencies": {
     "@loadable/component": "^5.12.0",
     "@mdx-js/mdx": "^1.5.7",
@@ -41,7 +43,8 @@
     "react-dom": "^16.13.0",
     "react-helmet": "^5.2.1",
     "remark-join-cjk-lines": "^1.0.6",
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.0.1",
+    "gatsby-theme-purefun-blog": "^1.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

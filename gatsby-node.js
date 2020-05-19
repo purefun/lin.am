@@ -1,10 +1,10 @@
-const { createArticles, createArticleFields } = require('./node_scripts/articles')
+// const { createArticles, createArticleFields } = require('./node_scripts/articles')
 
-exports.onCreateNode = (options) => {
-  createArticleFields(options)
-}
+// exports.onCreateNode = (options) => {
+//   createArticleFields(options)
+// }
 
-exports.createPages = async options => {
-  await createArticles(options)
-}
+// exports.createPages = async options => {
+//   await createArticles(options)
+// }
 

@@ -1,0 +1,7 @@
+{
+  "name": "gatsby-theme-purefun-blog",
+  "version": "1.0.0",
+  "dependencies": {
+    "gatsby-theme-purefun-blog-core": "^1.0.0"
+  }
+}
