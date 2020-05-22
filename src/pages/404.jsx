@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Page from '../components/Page'
 
 
 const NotFound = styled.pre`
@@ -23,13 +22,11 @@ const htmlOpen = `<html>`
 const htmlClose = '</html>'
 
 const NotFoundContainer = () => (
-  <Page context={{}}>
-    <NotFound>
-      <div>
-        {htmlOpen}<span>404</span>{htmlClose}
-      </div>
-    </NotFound>
-  </Page>
+  <NotFound>
+    <div>
+      {htmlOpen}<span>404</span>{htmlClose}
+    </div>
+  </NotFound>
 )
 
 export default NotFoundContainer

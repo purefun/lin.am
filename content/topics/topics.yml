@@ -1,0 +1,7 @@
+- topic: macOS
+  icon: icon1
+  color: "#ccc"
+
+- topic: JavaScript
+  icon: icon2
+  color: red

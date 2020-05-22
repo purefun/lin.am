@@ -19,7 +19,7 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-theme-purefun-blog',
+      resolve: 'gatsby-theme-purefun',
     },
     {
       resolve: 'gatsby-plugin-sass',

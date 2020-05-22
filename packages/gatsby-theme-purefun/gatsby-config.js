@@ -2,6 +2,18 @@ module.exports = (pluginOptions) => {
   return {
     plugins: [
       {
+        resolve: 'gatsby-plugin-page-creator',
+        options: {
+          path: `${__dirname}/src/pages`,
+        },
+      },
+      {
+        resolve: 'gatsby-plugin-typescript',
+      },
+      {
+        resolve: 'gatsby-plugin-styled-jsx',
+      },
+      {
         resolve: 'gatsby-plugin-mdx',
         options: {
           extensions: ['.mdx', '.md'],
@@ -18,6 +30,16 @@ module.exports = (pluginOptions) => {
             { resolve: 'gatsby-remark-smartypants' },
           ],
           remarkPlugins: [require(`remark-slug`)],
+        },
+      },
+      {
+        resolve: 'gatsby-transformer-yaml',
+      },
+      {
+        resolve: 'gatsby-source-filesystem',
+        options: {
+          path: 'content/topics',
+          name: 'content/topics',
         },
       },
       {

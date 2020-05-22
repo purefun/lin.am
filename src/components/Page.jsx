@@ -8,7 +8,6 @@ import Categories from './Categories'
 import { Responsive, breakpoints } from '../responsive'
 import '../theme.scss'
 import '../icons.scss'
-import '../global.scss'
 
 const LayoutWrapper = styled.div`
   min-height: var(--height-viewport);
