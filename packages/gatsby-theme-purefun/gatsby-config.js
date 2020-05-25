@@ -48,6 +48,21 @@ module.exports = (pluginOptions) => {
           path: pluginOptions.contentPath || `content/posts`,
           name: pluginOptions.contentPath || `content/posts`,
         }
+      },
+      {
+        resolve: 'gatsby-plugin-webfonts',
+        options: {
+          formats: ['woff2'],
+          fonts: {
+            google: [
+              {
+                family: 'IBM Plex Mono',
+                variants: ['400', '500'],
+                strategy: 'base64',
+              },
+            ]
+          }
+        }
       }
     ]
   }

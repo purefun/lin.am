@@ -36,6 +36,7 @@
     "gatsby-remark-copy-linked-files": "^2.1.40",
     "gatsby-remark-images": "^3.1.44",
     "gatsby-source-filesystem": "^2.1.48",
+    "gatsby-theme-purefun": "^1.0.0",
     "gatsby-transformer-sharp": "^2.3.16",
     "node-sass": "^4.13.1",
     "prism-react-renderer": "^1.0.2",
@@ -43,10 +44,11 @@
     "react-dom": "^16.13.0",
     "react-helmet": "^5.2.1",
     "remark-join-cjk-lines": "^1.0.6",
-    "styled-components": "^5.0.1",
-    "gatsby-theme-purefun": "^1.0.0"
+    "styled-components": "^5.0.1"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.0.0",
+    "@typescript-eslint/parser": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-config-google": "^0.14.0",
@@ -57,7 +59,8 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.18.3",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "typescript": "^3.9.3"
   },
   "repository": {
     "type": "git",

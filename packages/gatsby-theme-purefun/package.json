@@ -8,6 +8,7 @@
     "gatsby-plugin-page-creator": "^2.3.6",
     "gatsby-plugin-styled-jsx": "^3.3.2",
     "gatsby-plugin-typescript": "^2.4.3",
+    "gatsby-plugin-webfonts": "^1.1.2",
     "gatsby-remark-copy-linked-files": "^2.3.2",
     "gatsby-remark-smartypants": "^2.3.1",
     "gatsby-source-filesystem": "^2.3.4",
@@ -15,7 +16,8 @@
     "mkdirp": "^1.0.4",
     "normalize.css": "^8.0.1",
     "remark-slug": "^6.0.0",
-    "styled-jsx": "^3.3.0"
+    "styled-jsx": "^3.3.0",
+    "typescript": "^3.9.3"
   },
   "devDependencies": {
     "@types/styled-jsx": "^2.2.8"

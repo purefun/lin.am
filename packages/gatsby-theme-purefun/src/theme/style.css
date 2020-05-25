@@ -1,0 +1,24 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 1.6rem;
+  /* min-height: -webkit-fill-available; */
+  font-family: 'IBM Plex Mono';
+  font-weight: 400;
+}
+
+#___gatsby {
+  flex: 1;
+  display: flex;
+  align-items: scretch;
+}
+
+#gatsby-focus-wrapper {
+  flex-basis: 100%;
+}
