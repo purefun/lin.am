@@ -2,6 +2,7 @@
   "name": "gatsby-theme-purefun",
   "version": "1.0.0",
   "dependencies": {
+    "@mdx-js/react": "^1.6.4",
     "debug": "^4.1.1",
     "gatsby-core-utils": "^1.2.3",
     "gatsby-plugin-mdx": "^1.2.8",
@@ -20,6 +21,7 @@
     "typescript": "^3.9.3"
   },
   "devDependencies": {
+    "@types/mdx-js__react": "^1.5.2",
     "@types/styled-jsx": "^2.2.8"
   }
 }

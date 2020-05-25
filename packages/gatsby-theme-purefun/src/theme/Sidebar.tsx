@@ -27,7 +27,7 @@ export default function Sidebar() {
   return (
     <>
       <aside>
-        <Link to="/" className={linkCSS.className}>purefun.io</Link>
+        <Link to="/" className={linkCSS.className}>lin.am</Link>
       </aside>
       <style jsx>{styles}</style>
       {linkCSS.styles}

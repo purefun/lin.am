@@ -3,43 +3,15 @@ import { graphql, Link } from 'gatsby'
 import css from 'styled-jsx/css'
 import Layout from '../theme/Layout'
 
-export interface TopicProps {
-  id: string
-  name: string
-  icon: {
-    childImageSharp: {
-      original: {
-        src: string
-      }
-    }
-  }
-  color: string
-}
-
-interface Post {
-  id: string
-  slug: string
-  title: string
-  topic: string
-  date: string
-}
-
-interface IndexProps {
-  data: {
-    topics: {
-      nodes: [TopicProps],
-    },
-    posts: {
-      nodes: [Post]
-    }
-  }
-}
+const topicAsideWidth = '6.4rem'
 
 export const Topic: React.FC<{ topic: TopicProps }> = ({ children, topic }) => {
   return (
     <div className="topic">
       <header>
-        <img src={topic.icon.childImageSharp.original.src} alt={topic.name} />
+        <div className="icon">
+          <img src={topic.icon.childImageSharp.original.src} alt={topic.name} />
+        </div>
         <span>{topic.name}</span>
       </header>
       <div className="posts">
@@ -55,13 +27,18 @@ export const Topic: React.FC<{ topic: TopicProps }> = ({ children, topic }) => {
           border-top: 1px solid ${topic.color};
           display: flex;
           align-items: center;
-          padding: 1rem 2rem;
+          padding: 1rem 0;
         }
+        .icon {
+          flex: 0 0 ${topicAsideWidth};
+        }
+
         img {
           width: 2.8rem;
           height: 2.8rem;
           object-fit: cover;
-          margin-right: 2rem;
+          margin: 0 auto;
+          display: block;
         }
         span {
           font-weight: 500;
@@ -74,36 +51,40 @@ export const Topic: React.FC<{ topic: TopicProps }> = ({ children, topic }) => {
 const linkCSS = css.resolve`
   a {
     text-decoration: none;
-    line-height: 2.4rem;
     color: black;
-    display: flex;
-    margin: 2rem 0;
+    font-weight: normal;
+    line-height: 1.3;
+  }
+  a:hover {
+    border-bottom: 1px solid black;
   }
 `
 
-const PostLink: React.FC<{ date: string, to: string, title: string }> = ({ date, to, title }) => (
-  <Link to={to} className={linkCSS.className}>
+const Post: React.FC<{ date: string, to: string, title: string }> = ({ date, to, title }) => (
+  <div className="post">
     <span className="date">{date}</span>
-    <h4 className="title"><span>{title}</span></h4>
+    <h4 className="title">
+      <Link to={to} className={linkCSS.className}>{title}</Link>
+    </h4>
     {linkCSS.styles}
     <style jsx>{`
+      .post {
+        display: flex;
+        margin: 2rem 0;
+      }
       .date {
         font-family: 'IBM Plex Mono';
         font-size: 1.2rem;
         color: #afafaf;
-        flex: 0 0 6.3rem;
+        flex: 0 0 ${topicAsideWidth};
         text-align: center;
+        line-height: 1.8;
       }
       .title {
-        padding: 0 0.5rem;
         margin: 0;
-        font-weight: normal;
-      }
-      .title:hover span {
-        border-bottom: 1px solid black;
       }
     `}</style>
-  </Link>
+  </div>
 )
 
 const IndexPage: React.FC<IndexProps> = ({ data }) => {
@@ -116,7 +97,7 @@ const IndexPage: React.FC<IndexProps> = ({ data }) => {
               <ul>
             {posts.nodes.filter(post => post.topic === topic.name).map(post => (
                 <li key={post.id}>
-                  <PostLink to={post.slug} title={post.title} date={post.date} />
+                  <Post to={post.slug} title={post.title} date={post.date} />
                 </li>
             ))}
               </ul>

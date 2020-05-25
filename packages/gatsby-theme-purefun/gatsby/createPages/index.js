@@ -1,20 +1,19 @@
-const withDefaults = require('../default-options')
+// const withDefaults = require('../default-options')
 const debug = require('debug')('purefun:blog-core')
 debug.log = console.log
 
-const PostTemplate = require.resolve('../../src/theme/post-query')
-const PostsTemplate = require.resolve('../../src/theme/posts-query')
+const SinglePostTemplate = require.resolve('../../src/theme/SinglePost.tsx')
 
 module.exports = async ({ graphql, actions, reporter }, pluginOptions) => {
   const { createPage } = actions
-  const { basePath } = withDefaults(pluginOptions)
+  // const { basePath } = withDefaults(pluginOptions)
 
-  // /blog/ page
-  createPage({
-    path: basePath,
-    component: PostsTemplate,
-    context: {},
-  })
+  // // /blog/ page
+  // createPage({
+  //   path: basePath,
+  //   component: PostsTemplate,
+  //   context: {},
+  // })
 
   const result = await graphql(`
     {
@@ -43,7 +42,7 @@ module.exports = async ({ graphql, actions, reporter }, pluginOptions) => {
     const { slug } = post
     createPage({
       path: slug,
-      component: PostTemplate,
+      component: SinglePostTemplate,
       context: {
         id: post.id,
         previousId: previous ? previous.node.id : undefined,
