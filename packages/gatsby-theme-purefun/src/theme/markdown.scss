@@ -4,7 +4,9 @@ $color-primary: #257F6B;
   font-size: 1.6rem;
   color: #1e1e1e;
   line-height: 1.7;
+}
 
+.markdown {
   > h1, > h2, > h3, > h4, > h5, > h6 {
     font-size: 1.6rem;
     margin: 2.4rem 0;
@@ -27,12 +29,17 @@ $color-primary: #257F6B;
   > h4::before { content: 'H4' }
   > h5::before { content: 'H5' }
   > h6::before { content: 'H6' }
+}
 
+.markdown {
   > p {
     margin-top: 2.4rem;
     margin-bottom: 2.4rem;
   }
 
+}
+
+.markdown {
   > blockquote {
     border-left: 4px solid $color-primary;
     margin: 1rem 0;
@@ -41,25 +48,30 @@ $color-primary: #257F6B;
     line-height: 1.5;
     background: #f9f9f9;
   }
+}
 
+.markdown {
   > pre {
     overflow: auto;
     background: #f6f8fa;
     padding: 1.6rem;
     border-radius: 4px;
   }
-
   // inline codes
   > p code {
     background: #f6f8fa;
     padding: 0.32rem 0.64rem;
   }
+}
 
+.markdown {
   > hr {
     border: 0;
     border-top: 1px solid $color-primary;
   }
+}
 
+.markdown {
   > table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -69,7 +81,9 @@ $color-primary: #257F6B;
       padding: 1rem;
     }
   }
+}
 
+.markdown {
   a {
     color: black;
     text-decoration: none;
@@ -79,5 +93,11 @@ $color-primary: #257F6B;
       border-bottom-style: solid;
     }
   }
+}
 
+// gif etc. that gatsby cannot handle
+.markdown {
+  > p > img {
+    max-width: 100%;
+  }
 }
