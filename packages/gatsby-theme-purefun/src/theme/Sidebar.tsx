@@ -2,16 +2,6 @@ import React from 'react'
 import css from 'styled-jsx/css'
 import {Link} from 'gatsby'
 
-const styles = css`
-  aside {
-    width: 280px;
-    background: #F6F6F6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-`
-
 const linkCSS = css.resolve`
   a {
     text-decoration: none;
@@ -29,7 +19,6 @@ export default function Sidebar() {
       <aside>
         <Link to="/" className={linkCSS.className}>lin.am</Link>
       </aside>
-      <style jsx>{styles}</style>
       {linkCSS.styles}
     </>
   )

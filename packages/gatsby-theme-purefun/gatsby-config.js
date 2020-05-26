@@ -56,7 +56,7 @@ module.exports = (pluginOptions) => {
           fonts: {
             google: [
               {
-                family: 'IBM Plex Mono',
+                family: 'Roboto Mono',
                 variants: ['400', '500'],
                 strategy: 'base64',
               },

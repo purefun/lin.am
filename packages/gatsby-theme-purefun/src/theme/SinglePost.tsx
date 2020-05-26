@@ -1,8 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { MDXProvider } from '@mdx-js/react'
+/* import { MDXProvider } from '@mdx-js/react' */
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Layout from './Layout'
+import './markdown.scss'
 
 interface SinglePostProps {
   data: {
@@ -23,10 +24,15 @@ const SinglePost: React.FC<SinglePostProps> = ({ data }) => {
           </div>
         </header>
         <div className="content">
-          <MDXProvider>
+          <div className="markdown">
             <MDXRenderer>{blogPost.body}</MDXRenderer>
-          </MDXProvider>
+          </div>
         </div>
+        <style jsx>{`
+          article {
+            max-width: 80rem;
+          }
+        `}</style>
       </article>
     </Layout>
   )

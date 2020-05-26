@@ -9,16 +9,16 @@ body {
   min-height: 100vh;
   font-size: 1.6rem;
   /* min-height: -webkit-fill-available; */
-  font-family: 'IBM Plex Mono';
+  font-family: 'Roboto Mono', 'PingFang SC','Microsoft YaHei',sans-serif;
   font-weight: 400;
 }
 
 #___gatsby {
   flex: 1;
   display: flex;
-  align-items: scretch;
+  flex-direction: column;
 }
 
 #gatsby-focus-wrapper {
-  flex-basis: 100%;
+  flex: 1 1 100%;
 }

@@ -1,0 +1,83 @@
+$color-primary: #257F6B;
+
+.markdown {
+  font-size: 1.6rem;
+  color: #1e1e1e;
+  line-height: 1.7;
+
+  > h1, > h2, > h3, > h4, > h5, > h6 {
+    font-size: 1.6rem;
+    margin: 2.4rem 0;
+    line-height: 3.2rem;
+    color: $color-primary;
+
+    &::before {
+      font-size: 1.2rem;
+      color: #afafaf;
+      font-weight: normal;
+      display: inline-block;
+      width: 2.4rem;
+      margin-left: -2.4rem;
+    }
+  }
+
+  > h1::before { content: 'H1' }
+  > h2::before { content: 'H2' }
+  > h3::before { content: 'H3' }
+  > h4::before { content: 'H4' }
+  > h5::before { content: 'H5' }
+  > h6::before { content: 'H6' }
+
+  > p {
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  > blockquote {
+    border-left: 4px solid $color-primary;
+    margin: 1rem 0;
+    padding: 0 1rem 0 1.6rem;
+    overflow: hidden;
+    line-height: 1.5;
+    background: #f9f9f9;
+  }
+
+  > pre {
+    overflow: auto;
+    background: #f6f8fa;
+    padding: 1.6rem;
+    border-radius: 4px;
+  }
+
+  // inline codes
+  > p code {
+    background: #f6f8fa;
+    padding: 0.32rem 0.64rem;
+  }
+
+  > hr {
+    border: 0;
+    border-top: 1px solid $color-primary;
+  }
+
+  > table {
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    td, th {
+      border: 1px solid #dadde1;
+      padding: 1rem;
+    }
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px dotted black;
+
+    &:hover {
+      border-bottom-style: solid;
+    }
+  }
+
+}
