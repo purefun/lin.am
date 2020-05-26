@@ -78,21 +78,21 @@ const codeBlockTitleRegex = /title=".*"/;
 const styles = css`
 .codeBlockContent {
   position: relative;
+  font-size: 1.4rem;
 }
 
 .codeBlockTitle {
-  border-top-left-radius: var(--ifm-global-radius);
-  border-top-right-radius: var(--ifm-global-radius);
-  border-bottom: 1px solid var(--ifm-color-emphasis-200);
-  font-family: var(--ifm-font-family-monospace);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 1px solid red;
   font-weight: bold;
-  padding: 0.75rem var(--ifm-pre-padding);
+  padding: 0.75rem 1.6rem;
   width: 100%;
 }
 
 .codeBlock {
   overflow: auto;
-  border-radius: var(--ifm-global-radius);
+  border-radius: 8px;
 }
 
 .codeBlockWithTitle {
@@ -100,18 +100,22 @@ const styles = css`
   border-top-right-radius: 0;
 }
 
+.highlight-code-line {
+  background: blue;
+}
+
 .copyButton {
-  background: rgba(0, 0, 0, 0.3);
+  background: white;
   border: none;
-  border-radius: var(--ifm-global-radius);
-  color: var(--ifm-color-white);
+  border-radius: 2px;
+  color: green;
   cursor: pointer;
   opacity: 0;
   outline: none;
   padding: 0.4rem 0.5rem;
   position: absolute;
-  right: calc(var(--ifm-pre-padding) / 2);
-  top: calc(var(--ifm-pre-padding) / 2);
+  right: 0.8rem;
+  top: 0.8rem;
   visibility: hidden;
   transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out,
     bottom 200ms ease-in-out;
@@ -130,7 +134,7 @@ const styles = css`
   white-space: pre;
   float: left;
   min-width: 100%;
-  padding: var(--ifm-pre-padding);
+  padding: 1.6rem;
 }
 `
 
@@ -257,7 +261,6 @@ export default ({children, className: languageClassName, metastring}) => {
               {showCopied ? 'Copied' : 'Copy'}
             </button>
             <div
-              tabIndex={0}
               className={`${className} codeBlock ${codeBlockTitle ? 'codeBlockWithTitle' : ''}`}
               >
               <div ref={target} className="codeBlockLines" style={style}>
@@ -269,7 +272,7 @@ export default ({children, className: languageClassName, metastring}) => {
                   const lineProps = getLineProps({line, key: i});
 
                   if (highlightLines.includes(i + 1)) {
-                    lineProps.className = `${lineProps.className} docusaurus-highlight-code-line`;
+                    lineProps.className = `${lineProps.className} highlight-code-line`;
                   }
 
                   return (

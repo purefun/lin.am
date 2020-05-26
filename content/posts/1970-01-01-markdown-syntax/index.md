@@ -100,28 +100,7 @@ A code fence is a sequence of at least three consecutive backtick characters (`)
 or tildes (~). (Tildes and backticks cannot be mixed.) A fenced code block
 begins with a code fence, indented no more than three spaces.
 
-```md
----
-id: greeting
-title: Hello
----
-
-## Hello from Docusaurus
-
-Are you ready to create the documentation site for your open source project?
-
-### Headers
-
-will show up on the table of contents on the upper right
-
-So that your users will know what this page is all about without scrolling down or even without reading too much.
-
-### Only h2 and h3 will be in the toc
-
-The headers are well-spaced so that the hierarchy is clear.
-```
-
-```jsx
+```jsx {1,3-4} title="useHook.js"
 import React, { useState } from 'react';
 
 function Example() {
