@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "@mdx-js/react": "^1.6.4",
+    "clipboard": "^2.0.6",
     "debug": "^4.1.1",
     "gatsby-core-utils": "^1.2.3",
     "gatsby-plugin-mdx": "^1.2.8",
@@ -16,6 +17,8 @@
     "gatsby-transformer-yaml": "^2.4.2",
     "mkdirp": "^1.0.4",
     "normalize.css": "^8.0.1",
+    "parse-numeric-range": "^1.2.0",
+    "prism-react-renderer": "^1.1.1",
     "remark-slug": "^6.0.0",
     "styled-jsx": "^3.3.0",
     "typescript": "^3.9.3"

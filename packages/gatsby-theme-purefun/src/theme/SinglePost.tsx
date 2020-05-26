@@ -1,7 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-/* import { MDXProvider } from '@mdx-js/react' */
+import { MDXProvider } from '@mdx-js/react'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
+import MDXComponents from './MDXComponents';
 import Layout from './Layout'
 import './markdown.scss'
 
@@ -25,7 +26,9 @@ const SinglePost: React.FC<SinglePostProps> = ({ data }) => {
         </header>
         <div className="content">
           <div className="markdown">
-            <MDXRenderer>{blogPost.body}</MDXRenderer>
+            <MDXProvider components={MDXComponents}>
+              <MDXRenderer>{blogPost.body}</MDXRenderer>
+            </MDXProvider>
           </div>
         </div>
         <style jsx>{`

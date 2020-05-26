@@ -121,6 +121,24 @@ So that your users will know what this page is all about without scrolling down 
 The headers are well-spaced so that the hierarchy is clear.
 ```
 
+```jsx
+import React, { useState } from 'react';
+
+function Example() {
+  // Declare a new state variable, which we'll call "count"
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+```
+
 ## 7 HTML blocks
 
 An HTML block is a group of lines that is treated as raw HTML (and will not be
