@@ -9,20 +9,31 @@ const styles = css`
     min-height: 100%;
   }
   aside {
-    width: 280px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
     background: #F6F6F6;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f1f1f1;
   }
   main {
-    padding: 5rem;
-    padding-left: calc(280px + 5rem);
+    padding: 1.5rem;
+    padding-top: 5rem;
     box-sizing: border-box;
+  }
+
+  @media (min-width: 800px) {
+    aside {
+      position: fixed;
+      width: 280px;
+      top: 0;
+      left: 0;
+      bottom: 0;
+    }
+    main {
+      padding: 5rem;
+      padding-left: calc(280px + 5rem);
+    }
   }
 `
 

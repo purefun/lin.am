@@ -33,7 +33,7 @@ const SinglePost: React.FC<SinglePostProps> = ({ data }) => {
         </div>
         <style jsx>{`
           article {
-            max-width: 80rem;
+            /* max-width: 80rem; */
           }
         `}</style>
       </article>
