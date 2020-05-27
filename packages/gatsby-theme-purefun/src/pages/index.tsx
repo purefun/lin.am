@@ -23,7 +23,7 @@ export const Topic: React.FC<{ topic: TopicProps }> = ({ children, topic }) => {
           margin-bottom: 5rem;
         }
         header {
-          background: #f6f6f6;
+          background: #EDF2F6;
           border-top: 1px solid ${topic.color};
           display: flex;
           align-items: center;
@@ -34,8 +34,8 @@ export const Topic: React.FC<{ topic: TopicProps }> = ({ children, topic }) => {
         }
 
         img {
-          width: 2.8rem;
-          height: 2.8rem;
+          width: 2rem;
+          height: 2rem;
           object-fit: cover;
           margin: 0 auto;
           display: block;

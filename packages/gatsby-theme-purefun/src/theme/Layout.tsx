@@ -1,15 +1,14 @@
 import React from 'react'
 import 'normalize.css'
 import css from 'styled-jsx/css'
-import Sidebar from './Sidebar'
+import Navbar from './Navbar'
 import './style.scss'
 
 const styles = css`
   .layout {
     min-height: 100%;
   }
-  aside {
-    background: #F6F6F6;
+  nav {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,16 +22,8 @@ const styles = css`
   }
 
   @media (min-width: 800px) {
-    aside {
-      position: fixed;
-      width: 280px;
-      top: 0;
-      left: 0;
-      bottom: 0;
-    }
     main {
       padding: 5rem;
-      padding-left: calc(280px + 5rem);
     }
   }
 `
@@ -40,12 +31,8 @@ const styles = css`
 export default function Layout({ children })  {
   return (
     <div className="layout">
-      <aside>
-        <Sidebar />
-      </aside>
-      <main>
-        {children}
-      </main>
+      <nav><Navbar /></nav>
+      <main>{children}</main>
       <style jsx>{styles}</style>
     </div>
   )

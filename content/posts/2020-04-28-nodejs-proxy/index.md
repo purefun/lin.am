@@ -40,20 +40,18 @@ date: 2020-04-28
   。在使用 `http[s].request(options)` 模块时，`http[s].globalAgent` 将作为
   `options.agent` 的默认值。以 `http.globalAgent` 为例：
 
-  ```js
-  // https://github.com/nodejs/node/blob/v13.12.0/lib/http.js#L83-L92
-
-  ObjectDefineProperty(module.exports, 'globalAgent', {
-    configurable: true,
-    enumerable: true,
-    get() {
-      return httpAgent.globalAgent;
-    },
-    set(value) {
-      httpAgent.globalAgent = value;
-    }
-  });
-  ```
+```js title="https://github.com/nodejs/node/blob/v13.12.0/lib/http.js#L83-L92"
+ObjectDefineProperty(module.exports, 'globalAgent', {
+  configurable: true,
+  enumerable: true,
+  get() {
+    return httpAgent.globalAgent;
+  },
+  set(value) {
+    httpAgent.globalAgent = value;
+  }
+});
+```
 
   我们可以通过设置 `http.globalAgent` ，不改变业务代码的情况下，来达到设置代理的
   目的。这也是这个模块 [global-agent] 所做的事情。`global-agent` 的使用方法：

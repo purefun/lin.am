@@ -99,6 +99,8 @@ $color-primary: #257F6B;
 // gif etc. that gatsby cannot handle
 .markdown {
   > p > img {
+    display: block;
+    margin: 0 auto;
     max-width: 100%;
   }
 }
