@@ -1,5 +1,24 @@
 $color-primary: #257F6B;
 
+@mixin HeadingsIndicator {
+  font-size: 1.2rem;
+  color: #afafaf;
+  font-weight: normal;
+  display: inline-block;
+  width: 2.4rem;
+
+  @media (min-width: 800px) {
+    margin-left: -2.4rem;
+  }
+}
+
+h1.single-post-title {
+  &::before {
+    content: 'H1';
+    @include HeadingsIndicator;
+  }
+}
+
 .markdown {
   font-size: 1.6rem;
   color: #1e1e1e;
@@ -14,13 +33,9 @@ $color-primary: #257F6B;
     color: $color-primary;
 
     &::before {
-      font-size: 1.2rem;
-      color: #afafaf;
-      font-weight: normal;
-      display: inline-block;
-      width: 2.4rem;
-      margin-left: -2.4rem;
+      @include HeadingsIndicator;
     }
+
   }
 
   > h1::before { content: 'H1' }

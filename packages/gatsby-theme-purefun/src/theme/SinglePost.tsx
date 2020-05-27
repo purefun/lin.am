@@ -18,9 +18,9 @@ const SinglePost: React.FC<SinglePostProps> = ({ data }) => {
     <Layout>
       <article>
         <header>
-          <h1>{blogPost.title}</h1>
+          <h1 className="single-post-title">{blogPost.title}</h1>
           <div className="meta">
-            <div className="topic">{blogPost.topic}</div>
+            {/* <div className="topic">{blogPost.topic}</div> */}
             <div className="date">{blogPost.date}</div>
           </div>
         </header>
@@ -33,7 +33,13 @@ const SinglePost: React.FC<SinglePostProps> = ({ data }) => {
         </div>
         <style jsx>{`
           article {
-            /* max-width: 80rem; */
+            max-width: 80rem;
+            margin: 0 auto;
+          }
+          header {
+          }
+          .date {
+            color: #afafaf;
           }
         `}</style>
       </article>
