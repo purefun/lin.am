@@ -7,6 +7,9 @@ import './style.scss'
 const styles = css`
   .layout {
     min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
   nav {
     display: flex;
@@ -19,6 +22,15 @@ const styles = css`
     padding: 1.5rem;
     padding-top: 5rem;
     box-sizing: border-box;
+  }
+  footer {
+    margin-top: auto;
+    border-top: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    color: #afafaf;
+    font-size: 1.4rem;
   }
 
   @media (min-width: 800px) {
@@ -33,6 +45,7 @@ export default function Layout({ children })  {
     <div className="layout">
       <nav><Navbar /></nav>
       <main>{children}</main>
+      <footer>Footer</footer>
       <style jsx>{styles}</style>
     </div>
   )
