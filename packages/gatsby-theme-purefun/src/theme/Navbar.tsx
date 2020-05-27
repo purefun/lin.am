@@ -7,7 +7,7 @@ const linkCSS = css.resolve`
     text-decoration: none;
     display: inline-block;
     padding: 0.3rem 0.6rem;
-    color: white;
+    color: var(--color-logo-text);
     font-weight: 500;
     font-size: 1.8rem;
     background: var(--color-primary);
@@ -31,7 +31,7 @@ export default function Navbar() {
           padding: 3rem 0;
         }
         .desc {
-          color: var(--color-gray-200);
+          color: var(--color-gray-300);
           font-size: 1.4rem;
           margin-top: 0.4rem;
         }

@@ -1,13 +1,33 @@
-:root {
+html[color-scheme=light] {
   --color-primary: #257F6B;
-  --color-gray-100: #f1f1f1;
-  --color-gray-200: #afafaf;
+  --color-gray-100: #f9f9f9;
+  --color-gray-200: #f1f1f1;
+  --color-gray-300: #afafaf;
   --color-gray-600: #1e1e1e;
 
   --color-bg: white;
+  --color-text: #1e1e1e;
+  --color-logo-text: white;
 
   // prism theme
-  --fenced-bg: #f6f8fa;
+  --fenced-bg: #FBFBFB;
+  --fenced-text: #393a34;
+  --fenced-title-border: #ebedf0;
+}
+
+html[color-scheme=dark] {
+  --color-primary: #257F6B;
+  --color-gray-100: #292A2C;
+  --color-gray-200: #343638;
+  --color-gray-300: #535658;
+  --color-gray-600: #1e1e1e;
+
+  --color-bg: #212325;
+  --color-text: #8E8E8E;
+  --color-logo-text: black;
+
+  // prism theme
+  --fenced-bg: #282a36;
   --fenced-text: #393a34;
   --fenced-title-border: #ebedf0;
 }
@@ -22,6 +42,7 @@ html {
 
 body {
   margin: 0;
+  background: var(--color-bg);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -29,7 +50,7 @@ body {
   /* min-height: -webkit-fill-available; */
   font-family: 'Roboto Mono', 'PingFang SC','Microsoft YaHei',sans-serif;
   font-weight: 400;
-  color: var(--color-gray-600);
+  color: var(--color-text);
 }
 
 #___gatsby {

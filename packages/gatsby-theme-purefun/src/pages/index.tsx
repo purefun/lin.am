@@ -23,7 +23,7 @@ export const Topic: React.FC<{ topic: TopicProps }> = ({ children, topic }) => {
           margin-bottom: 5rem;
         }
         header {
-          background: #F9F9F9;
+          background: var(--color-gray-100);
           display: flex;
           align-items: center;
           padding: 1rem 0;
@@ -52,10 +52,10 @@ const linkCSS = css.resolve`
     text-decoration: none;
     font-weight: normal;
     line-height: 1.3;
-    color: var(--color-gray-600);
+    color: var(--color-text);
   }
   a:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--color-text);
   }
 `
 
@@ -74,7 +74,7 @@ const Post: React.FC<{ date: string, to: string, title: string }> = ({ date, to,
       .date {
         font-family: 'Roboto Mono';
         font-size: 1.2rem;
-        color: var(--color-gray-200);
+        color: var(--color-gray-300);
         flex: 0 0 ${topicAsideWidth};
         text-align: center;
         line-height: 1.8;

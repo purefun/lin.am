@@ -16,8 +16,8 @@ const colors = {
 
 export const theme = {
   plain: {
-    color: "#403f53",
-    backgroundColor: "#FBFBFB"
+    color: "var(--fenced-text)",
+    backgroundColor: "var(--fenced-bg)",
   },
   styles: [
     {

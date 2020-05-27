@@ -2,6 +2,7 @@ import React from 'react'
 import 'normalize.css'
 import css from 'styled-jsx/css'
 import Navbar from './Navbar'
+import Footer from './Footer'
 import './style.scss'
 
 const styles = css`
@@ -16,7 +17,7 @@ const styles = css`
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
-    border-bottom: 1px solid var(--color-gray-100);
+    border-bottom: 1px solid var(--color-gray-200);
   }
   main {
     padding: 1.5rem;
@@ -25,11 +26,11 @@ const styles = css`
   }
   footer {
     margin-top: auto;
-    border-top: 1px solid var(--color-gray-100);
+    border-top: 1px solid var(--color-gray-200);
     display: flex;
     justify-content: center;
     padding: 1rem 0;
-    color: var(--color-gray-200);
+    color: var(--color-gray-300);
     font-size: 1.4rem;
   }
 
@@ -45,7 +46,7 @@ export default function Layout({ children })  {
     <div className="layout">
       <nav><Navbar /></nav>
       <main>{children}</main>
-      <footer>Footer</footer>
+      <footer><Footer /></footer>
       <style jsx>{styles}</style>
     </div>
   )
