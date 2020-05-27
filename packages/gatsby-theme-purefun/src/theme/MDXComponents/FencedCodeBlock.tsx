@@ -3,7 +3,7 @@ import Highlight, {defaultProps} from 'prism-react-renderer';
 import css from 'styled-jsx/css';
 import Clipboard from 'clipboard';
 import rangeParser from 'parse-numeric-range';
-import dracula from 'prism-react-renderer/themes/dracula';
+import { theme } from './code-block-theme';
 
 const highlightLinesRangeRegex = /{([\d,-]+)}/;
 const getHighlightDirectiveRegex = (
@@ -49,7 +49,7 @@ const getHighlightDirectiveRegex = (
   return new RegExp(`^\\s*(?:${commentPattern})\\s*$`);
 };
 // select comment styles based on language
-const highlightDirectiveRegex = (lang) => {
+const highlightDirectiveRegex = (lang: string) => {
   switch (lang) {
     case 'js':
     case 'javascript':
@@ -76,18 +76,20 @@ const highlightDirectiveRegex = (lang) => {
 const codeBlockTitleRegex = /title=".*"/;
 
 const styles = css`
+.codeBlockWrapper {
+  font-size: 1.4rem;
+}
 .codeBlockContent {
   position: relative;
-  font-size: 1.4rem;
 }
 
 .codeBlockTitle {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid var(--fenced-title-border);
   font-weight: bold;
   padding: 0.75rem 1.6rem;
-  width: 100%;
+  overflow: auto;
 }
 
 .codeBlock {
@@ -101,36 +103,29 @@ const styles = css`
 }
 
 .highlight-code-line {
-  background: blue;
+  padding: 0 1.6rem 0 calc(1.6rem - 2px);
+  margin: 0 -1.6rem;
+  border-left: 2px solid var(--color-primary);
+  background: rgba(0,0,0,0.05);
 }
 
 .copyButton {
-  background: white;
+  background: rgba(0,0,0, 0.05);
   border: none;
-  border-radius: 2px;
+  border-radius: 4px;
   color: green;
   cursor: pointer;
-  opacity: 0;
+  opacity: 1;
   outline: none;
   padding: 0.4rem 0.5rem;
   position: absolute;
   right: 0.8rem;
   top: 0.8rem;
-  visibility: hidden;
-  transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out,
-    bottom 200ms ease-in-out;
-}
-
-.codeBlockTitle:hover + .codeBlockContent .copyButton,
-.codeBlockContent:hover > .copyButton {
-  visibility: visible;
-  opacity: 1;
+  font-size: 1.2rem;
 }
 
 .codeBlockLines {
-  font-family: var(--ifm-font-family-monospace);
   font-size: inherit;
-  line-height: var(--ifm-pre-line-height);
   white-space: pre;
   float: left;
   min-width: 100%;
@@ -241,11 +236,11 @@ export default ({children, className: languageClassName, metastring}) => {
     <Highlight
       {...defaultProps}
       key={mounted}
-      theme={dracula}
+      theme={theme}
       code={code}
       language={language}>
       {({className, style, tokens, getLineProps, getTokenProps}) => (
-        <>
+        <div className="codeBlockWrapper">
           {codeBlockTitle && (
             <div style={style} className="codeBlockTitle">
               {codeBlockTitle}
@@ -287,7 +282,7 @@ export default ({children, className: languageClassName, metastring}) => {
             </div>
           </div>
           <style jsx>{styles}</style>
-        </>
+        </div>
       )}
     </Highlight>
   );

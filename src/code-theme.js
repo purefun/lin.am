@@ -13,6 +13,7 @@ const colors = {
   method: "#B48EAD",
   operator: "#D8DEE9"
 };
+
 const theme = {
   plain: {
     backgroundColor: "#3B4763",

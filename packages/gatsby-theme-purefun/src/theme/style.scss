@@ -1,3 +1,17 @@
+:root {
+  --color-primary: #257F6B;
+  --color-gray-100: #f1f1f1;
+  --color-gray-200: #afafaf;
+  --color-gray-600: #1e1e1e;
+
+  --color-bg: white;
+
+  // prism theme
+  --fenced-bg: #f6f8fa;
+  --fenced-text: #393a34;
+  --fenced-title-border: #ebedf0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -15,6 +29,7 @@ body {
   /* min-height: -webkit-fill-available; */
   font-family: 'Roboto Mono', 'PingFang SC','Microsoft YaHei',sans-serif;
   font-weight: 400;
+  color: var(--color-gray-600);
 }
 
 #___gatsby {
@@ -31,3 +46,4 @@ body {
 code {
   font-family: 'Roboto Mono', monospace;
 }
+

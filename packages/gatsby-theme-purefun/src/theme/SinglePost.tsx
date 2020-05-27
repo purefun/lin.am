@@ -39,7 +39,7 @@ const SinglePost: React.FC<SinglePostProps> = ({ data }) => {
           header {
           }
           .date {
-            color: #afafaf;
+            color: var(--color-gray-200);
           }
         `}</style>
       </article>

@@ -16,7 +16,7 @@ const styles = css`
     align-items: center;
     justify-content: center;
     padding: 1rem 0;
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid var(--color-gray-100);
   }
   main {
     padding: 1.5rem;
@@ -25,11 +25,11 @@ const styles = css`
   }
   footer {
     margin-top: auto;
-    border-top: 1px solid #f1f1f1;
+    border-top: 1px solid var(--color-gray-100);
     display: flex;
     justify-content: center;
     padding: 1rem 0;
-    color: #afafaf;
+    color: var(--color-gray-200);
     font-size: 1.4rem;
   }
 

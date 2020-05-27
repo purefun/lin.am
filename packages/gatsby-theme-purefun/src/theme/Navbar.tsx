@@ -5,12 +5,14 @@ import {Link} from 'gatsby'
 const linkCSS = css.resolve`
   a {
     text-decoration: none;
-    color: black;
+    display: inline-block;
+    padding: 0.3rem 0.6rem;
+    color: white;
     font-weight: 500;
     font-size: 1.8rem;
+    background: var(--color-primary);
   }
   a:hover {
-    border-bottom: 1px solid black;
   }
   p {
 
@@ -29,7 +31,7 @@ export default function Navbar() {
           padding: 3rem 0;
         }
         .desc {
-          color: #afafaf;
+          color: var(--color-gray-200);
           font-size: 1.4rem;
           margin-top: 0.4rem;
         }

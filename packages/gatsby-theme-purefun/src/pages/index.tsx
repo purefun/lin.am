@@ -50,9 +50,9 @@ export const Topic: React.FC<{ topic: TopicProps }> = ({ children, topic }) => {
 const linkCSS = css.resolve`
   a {
     text-decoration: none;
-    color: black;
     font-weight: normal;
     line-height: 1.3;
+    color: var(--color-gray-600);
   }
   a:hover {
     border-bottom: 1px solid black;
@@ -72,9 +72,9 @@ const Post: React.FC<{ date: string, to: string, title: string }> = ({ date, to,
         margin: 2rem 0;
       }
       .date {
-        font-family: 'IBM Plex Mono';
+        font-family: 'Roboto Mono';
         font-size: 1.2rem;
-        color: #afafaf;
+        color: var(--color-gray-200);
         flex: 0 0 ${topicAsideWidth};
         text-align: center;
         line-height: 1.8;
