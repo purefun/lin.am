@@ -16,6 +16,12 @@ h1.single-post-title {
   &::before {
     content: 'H1';
     @include HeadingsIndicator;
+    display: none;
+
+    @media (min-width: 800px) {
+      margin-left: -2.4rem;
+      display: inline-block;
+    }
   }
 }
 

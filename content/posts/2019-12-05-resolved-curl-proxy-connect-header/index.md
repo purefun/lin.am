@@ -4,8 +4,7 @@ date: 2019-12-05
 topic: Shell
 ---
 
-问题定义
-========
+## 问题定义
 
 `curl` 通过代理服务器发送 HTTPS 请求时，把和 HTTPS 代理服务器建立链接的 Status
 Line 输出到结果中，导致无法解析出正确的 HTTP 状态。
@@ -22,8 +21,7 @@ content-length: 1564
 date: Fri, 06 Dec 2019 07:07:09 GMT
 ```
 
-问题发现
-========
+## 问题发现
 
 在使用 Vim 的日历插件 [calendar.vim](https://github.com/itchyny/calendar.vim)
 时，插件无法处理 Google Calendar 的 `access_token` 过期返回 401 的情况。
@@ -37,8 +35,7 @@ Status-Line = HTTP-Version SP Status-Code SP Reason-Phrase CRLF
 
 但第一行并不是远程服务器返回的 `Status-Line`，而是代理服务器的。
 
-问题解决
-========
+## 问题解决
 
 curl 提供了一个选项 `--suppress-connect-header`。
 

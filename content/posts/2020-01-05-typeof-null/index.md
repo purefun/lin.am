@@ -70,7 +70,7 @@ JS_TypeOfValue(JSContext *cx, jsval v)
 这个分支，这就是 `typeof null === 'object'` 的由来。
 
 
-# References
+## References
 
   1. [The history of “typeof null”]
      (https://2ality.com/2013/10/typeof-null.html)

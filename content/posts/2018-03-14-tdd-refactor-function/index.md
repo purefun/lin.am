@@ -6,7 +6,7 @@ date: 2018-03-14
 
   > 根据我自己 2018 年入职新公司后在团队内部第一次分享内容整理。
 
-# 实际案例需求
+## 实际案例需求
 
   当用户在登录表单输入手机号时，为用户实时将手机号进行格式化：在网络识别号和地区
   编码、地区编码和序号之间插入空格。
@@ -19,7 +19,7 @@ date: 2018-03-14
   ![实际案例](./user-cases.png)
 
 
-# 需求分析
+## 需求分析
 
   需求本身并不复杂，但容易忽略「实时」这个需求要点。这里「实时」的含义是指当用户
   输入到地区编码的第一位数字时，即要在该数字前插入空格，删除该数字时，同时删除空
@@ -41,7 +41,7 @@ date: 2018-03-14
   ];
   ```
 
-# Jest 一分钟入门
+## Jest 一分钟入门
 
   1. 安装 Jest: `npm install -g jest`
   2. 在目录下创建 Jest 配置文件：`touch jest.config.js`
@@ -59,7 +59,7 @@ test('minimal test case', () => {
 
  ![jest 运行结果](./jest-minimal.png)
 
-# 编写测试用例
+## 编写测试用例
 
   ```shell
   # 文件目录
@@ -109,9 +109,9 @@ test('minimal test case', () => {
   ![Jest 执行失败结果](./non-impl-jest.png)
 
 
-# 函数实现
+## 函数实现
 
-## 方案一：插入空格
+### 方案一：插入空格
 
   这是可能是最容易想到的方案，但是 JavaScript 中 String 类型总是不可变的，就需要
   按字符分割成数组，然后根据条件在对应的位置使用 `splice` 插入空格：
@@ -147,7 +147,7 @@ test('minimal test case', () => {
   ![插入空格方案](./version-1-result-with-watchAll-split-window.png)
   
 
-## 方案二：三段切割
+### 方案二：三段切割
 
   我们可以利用 `String.prototype.slice()` 根据位置切割后在拼接：
 
@@ -163,7 +163,7 @@ test('minimal test case', () => {
 module.exports = formatPhoneNumber;
   ```
 
-## 方案三：正则表达式
+### 方案三：正则表达式
 
   在处理文本问题，**正则表达式**应该是首选方案，还是用三段切割后拼接的方法，但使
   用正则表达式可以更轻松。
@@ -178,7 +178,7 @@ module.exports = formatPhoneNumber;
   module.exports = formatPhoneNumber;
 ```
 
-# 总结
+## 总结
 
   TDD 即「测试驱动开发」。
 

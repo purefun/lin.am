@@ -4,7 +4,7 @@ topic: App
 date: 2018-10-08
 ---
 
-# Shiny Frog 是一家怎样的公司？
+## Shiny Frog 是一家怎样的公司？
 
 > Pixel perfect, beautiful apps. —— We are *Shiny Frog*
 > A journey of thousand miles begins with a single step. —— Laozi
@@ -66,7 +66,7 @@ Shiny Frog 的官网在 10 多年来，只经历了三次改版：
 有意思的是，在第一版的网站底部有一句老子的话：「A journey of thousand miles
 begins with a single step.」，意思是「千里之行，始于足下。」
 
-# Bear 的获奖情况
+## Bear 的获奖情况
 
 在 App store 上线一个月后，Bear 收获了 2016 年度 App Store 的 Best Apps on
 iPhone/iPad、Mac App of the Year。
@@ -78,7 +78,7 @@ Bear 在 2017 年更是获得了苹果设计大奖，对于 iOS & macOS 应用�
 
 ![](bear-apple-design-awards-2017.png)
 
-# Bear 的新功能计划
+## Bear 的新功能计划
 
 Bear Web 已经是在开发中，而呼声最高的应该支持表格功能，也是在计划清单中。
 
@@ -89,7 +89,7 @@ Bear 的 Web 版本的笔记同步依然是依赖 iCloud，WWDC 2015 发布的 C
 杂性。期待可以更早看到 Bear 的表格编辑出彩的地方。
 
 
-# 参考链接
+## 参考链接
 
   1. http://shinyfrog.net
   2. https://bear.app

@@ -31,7 +31,7 @@ date: 2016-07-20
 
   最后根据日常需求，给出选择建议。
 
-# 用户界面
+## 用户界面
 
   七款播放器的播放播放界面基本一致。
 
@@ -45,14 +45,14 @@ date: 2016-07-20
 
   ![播放界面](./players-ui.png)
 
-# 中文支持
+## 中文支持
 
   MPV 无多语言支持（MPV 需用命令行启动）。用户界面的语言均随从 OS X 系统语言，
   其中仅 VLC 提供了变更语言的选项。
 
   ![中文语言支持](./i18n.png)
 
-# 外挂字幕
+## 外挂字幕
 
   QuickTime 不支持任何外挂字幕（但可以显示视频文件内嵌字幕）。
 
@@ -68,7 +68,7 @@ date: 2016-07-20
 
   ![外挂字幕对比](./subtitle.png)
 
-# 播放控制
+## 播放控制
 
   步进/步退是指根据用户控制（主要指键盘快捷键），按照固定时间间隔向前/向后跳跃
   播放。Movist 步进/步退功能最丰富，除了提供 10秒、60秒和 300秒的不同间隔外，还
@@ -87,7 +87,7 @@ date: 2016-07-20
 
   ![播放控制](./controls.png)
 
-# 画面质量
+## 画面质量
 
   色彩方面的简单对比，使用 [Big Buck Bunny 1080p
   60fps](http://bbb3d.renderfarming.net/download.html) （视频编码为 H264 -
@@ -109,7 +109,7 @@ date: 2016-07-20
 
   ![渲染细节](./render-detail.gif)
 
-# 播放性能
+## 播放性能
 
   播放设备
   型号：MacBook Air 11-inch
@@ -161,7 +161,7 @@ date: 2016-07-20
 
   ![60FPS CPU](./fps-cpu.png)
 
-# 视频格式支持
+## 视频格式支持
 
   QuickTime 支持视频格式有 AVI（.avi）、DV Stream（.dv）、MPEG-2（.mpv、.mpg …
   ）、MPEG-4（.mp4, .m4a, .m4p, .m4b, .m4r and .m4v）、QuickTime Movie（.mov）
@@ -169,12 +169,12 @@ date: 2016-07-20
 
   除 QuickTime 外，其余均支持当前主流文件格式，如 .mp4、.mkv、.avi、.flv 等。
 
-# 价格
+## 价格
 
   ![价格对比](./prices.png)
 
 
-# 综合选择建议
+## 综合选择建议
 
   相比之下，如果价格不算缺点，Movist 仅有 ass 字幕的无法表现特效这一个缺点。
   MPlayerX 曾经和臭名昭著的 MacKeeper 与 ZipCloud 捆绑销售（可选）（关于捆绑销

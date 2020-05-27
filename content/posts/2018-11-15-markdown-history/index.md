@@ -4,7 +4,7 @@ topic: Markdown
 date: 2018-11-15
 ---
 
-# 主要人物
+## 主要人物
 
 ![John Gruber](./john-gruber.jpg)
 
@@ -51,7 +51,7 @@ Markdown 的语法用于书写问题和答案。Discourse 的也是集成 Markdo
 令行文档转换工具 [Pandoc](https://github.com/jgm/pandoc) 作者，
 [CommonMark](https://github.com/commonmark) 规范主要编写作者。
 
-# 什么是 Markdown？
+## 什么是 Markdown？
 
 根据 14 年前 Markdown 创造者 John Gruber 的定义，Markdown 是一个固定文本格式到
 HTML 的转换工具。Markdown 包含了两个内容：
@@ -65,7 +65,7 @@ HTML 的转换工具。Markdown 包含了两个内容：
 段的 HTML 内容绝对是糟糕的体验。Markdown 用尽可能简洁的语法格式，达到了这个目的
 。
 
-# 2004 - Markdown 的起源
+## 2004 - Markdown 的起源
 
 John Gruber 在 2002 年创建了 [Daring Fireball](https://daringfireball.net)。两年
 后的 2004 年 3月，发表了第一篇关于 Markdown 文章 [Daring Fireball: Introducing
@@ -82,13 +82,13 @@ Type](https://movabletype.com/) 发布的不愉快经历。这种不爽的体验
 Swartz](https://zh.wikipedia.org/wiki/%E4%BA%9A%E4%BC%A6%C2%B7%E6%96%AF%E6%B2%83%E8%8C%A8)
 的帮助。
 
-# 2007 - Pandoc
+## 2007 - Pandoc
 
 [Pandoc](http://pandoc.org/index.html) 是 John MacFarlane 开发的一款万能文档转换
 工具。Pandoc 可以在几十种文档格式之间相互转换。Pandoc 早期就加入对 Markdown 格式
 的支持。这使得会有更多早期的用户尝试 Markdown 工具写作。
 
-# 2008 - Stack Overflow
+## 2008 - Stack Overflow
 
 2008 年，[Stack Overflow](https://stackoverflow.com/) 的联合创始人 [Jeff
 Atwood](https://blog.codinghorror.com/about-me/) 选定 Markdown 作为 Stack
@@ -118,7 +118,7 @@ Atwood 是最热心的 Markdown 布道者，用他的影响力不断地向世人
 好处。  同时 Jeff Atwood 埋怨 John Gruber 对 Markdown 的发展毫不关心。因 Stack
 Overflow 的影响力，Markdown 逐渐开始在程序员的世界里流行起来。
 
-# 2009 - Github Flavored Markdown
+## 2009 - Github Flavored Markdown
 
 Github 大约在 2009 年开始使用 Markdown 1.0 的派生版本 [GitHub Flavored Markdown
 (GFM)](http://github.github.com/github-flavored-markdown/)。其中最主要区别在于以
@@ -131,7 +131,7 @@ Github 大约在 2009 年开始使用 Markdown 1.0 的派生版本 [GitHub Flavo
 
 ![Markdown 1.0 vs Github Flavored Markdown](./markdown-vs-gfm___small.jpg)
 
-# 2012 - who’s with me?
+## 2012 - who’s with me?
 
 Jeff 在 [The Future of
 Markdown](https://blog.codinghorror.com/the-future-of-markdown/) 中提议 Stack
@@ -155,7 +155,7 @@ Jeff 便在这个时候开始组建工作小组，成员列表如下：
 * Benjamin Dumke-von der Ehe, ben@stackexchange.com
 * Jeff Atwood, jatwood@codinghorror.com
 
-# 2014 - Standard Markdown & CommonMark
+## 2014 - Standard Markdown & CommonMark
 
 Jeff 所组建的工作小组经过两年的努力，在 2014 年 9 月发布名为 [Standard
 Markdown](http://standardmarkdown.com/) 的项目。因 John Gruber [反对这个名称
@@ -164,7 +164,7 @@ Markdown](http://standardmarkdown.com/) 的项目。因 John Gruber [反对这�
 Pandoc 的作者 John MacFarlane 编写，其中包含了 624 个测试用例，C 和 JavaScript
 的规范实现。
 
-# 2016 - text/markdown
+## 2016 - text/markdown
 
 互联网技术标准制定机构 IETF 发布 [RFC 7763 - The text/markdown Media
 Type](https://tools.ietf.org/html/rfc7763) 和 [RFC 7764 - Guidance on
@@ -184,12 +184,12 @@ Markdown](https://tools.ietf.org/html/rfc7764) 两份征求意见稿，收录 Ma
 8.  `text/markdown; variant=rfc7328` Pandoc2rfc；
 9.  `text/markdown; variant=Extra` PHP Markdown Extra。
 
-# 2017 - GitHub Flavored Markdown Spec
+## 2017 - GitHub Flavored Markdown Spec
 
 GitHub Flavored Markdown 基于 CommonMark Spec 发布了自己 spec，支持表格、任务列
 表和删除线，禁止 HTML 原始标签。测试用例从 624 个增加到 651 个。
 
-# 现在
+## 现在
 
 Markdown 已经是事实上的无处不在。也是诸多笔记和写作软件首选支持的格式。John
 Gruber 为了方便更新他的博客，发布了 Markdown。但在此后的 10 多年里，他再也没有更
