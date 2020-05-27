@@ -1,23 +1,17 @@
 - name: macOS
   icon: ./icons/gatsby.png
-  color: "#ccc"
 
 - name: JavaScript
   icon: ./icons/gatsby.png
-  color: red
 
 - name: Node
   icon: ./icons/gatsby.png
-  color: green
 
 - name: Markdown
   icon: ./icons/gatsby.png
-  color: black
 
 - name: Keyboard
   icon: ./icons/gatsby.png
-  color: blue
 
 - name: Shell
   icon: ./icons/gatsby.png
-  color: yellow

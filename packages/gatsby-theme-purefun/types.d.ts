@@ -17,7 +17,6 @@ interface TopicProps {
       }
     }
   }
-  color: string
 }
 
 interface IndexProps {

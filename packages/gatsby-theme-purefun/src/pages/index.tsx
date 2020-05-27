@@ -23,8 +23,7 @@ export const Topic: React.FC<{ topic: TopicProps }> = ({ children, topic }) => {
           margin-bottom: 5rem;
         }
         header {
-          background: #EDF2F6;
-          border-top: 1px solid ${topic.color};
+          background: #F9F9F9;
           display: flex;
           align-items: center;
           padding: 1rem 0;
@@ -108,6 +107,8 @@ const IndexPage: React.FC<IndexProps> = ({ data }) => {
         .topics {
           column-width: 40rem;
           column-gap: 2rem;
+          max-width: 130rem;
+          margin: 0 auto;
         }
         ul {
           margin: 0;
@@ -136,7 +137,6 @@ export const homeQuery = graphql`
             }
           }
         }
-        color
       }
     }
     posts: allBlogPost(sort: {fields: date, order: DESC}) {
