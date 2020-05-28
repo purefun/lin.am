@@ -43,7 +43,7 @@ export const theme: PrismTheme = {
     {
       types: ['variable'],
       style: {
-        color: 'var(--fenced-cyan)'
+        color: 'var(--fenced-red)'
       }
     },
     {
