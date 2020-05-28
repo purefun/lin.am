@@ -12,7 +12,7 @@ interface TopicProps {
   name: string
   icon: {
     childImageSharp: {
-      original: {
+      fixed: {
         src: string
       }
     }

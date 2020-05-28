@@ -10,7 +10,7 @@ export const Topic: React.FC<{ topic: TopicProps }> = ({ children, topic }) => {
     <div className="topic">
       <header>
         <div className="icon">
-          <img src={topic.icon.childImageSharp.original.src} alt={topic.name} />
+          <img src={topic.icon.childImageSharp.fixed.src} alt={topic.name} />
         </div>
         <span>{topic.name}</span>
       </header>
@@ -33,8 +33,8 @@ export const Topic: React.FC<{ topic: TopicProps }> = ({ children, topic }) => {
         }
 
         img {
-          width: 2rem;
-          height: 2rem;
+          width: 3.2rem;
+          height: 3.2rem;
           object-fit: cover;
           margin: 0 auto;
           display: block;
@@ -132,7 +132,7 @@ export const homeQuery = graphql`
         name
         icon {
           childImageSharp {
-            original {
+            fixed(height: 96, width: 96, quality: 100) {
               src
             }
           }

@@ -1,6 +1,6 @@
 ---
 title: 配置 Node.js HTTP 全局代理的通用方案
-topic: Node
+topic: Node.js
 date: 2020-04-28
 ---
 
