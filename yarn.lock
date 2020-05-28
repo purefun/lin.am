@@ -11819,6 +11819,13 @@ remark-join-cjk-lines@^1.0.6:
   dependencies:
     unist-util-visit "^2.0.2"
 
+remark-join-cjk-lines@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/remark-join-cjk-lines/-/remark-join-cjk-lines-1.0.8.tgz#7ebe457992bc843ed23504ed0d5a6c024ea44084"
+  integrity sha512-KwpzBlbJa/YzTiSWw7/ZxSHHcr4w8LppkG8HIZXoxBGczxdURzmnbyQ/aUeLozeUSzXzbV2aPUdRtWiqPW9J6A==
+  dependencies:
+    unist-util-visit "^2.0.2"
+
 remark-mdx@^1.5.7:
   version "1.5.7"
   resolved "https://registry.yarnpkg.com/remark-mdx/-/remark-mdx-1.5.7.tgz#bdeb83e7e625a8e1e446c233c6cb30dd5f0cfd98"
