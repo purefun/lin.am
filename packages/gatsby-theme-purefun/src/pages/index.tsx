@@ -89,7 +89,7 @@ const Post: React.FC<{ date: string, to: string, title: string }> = ({ date, to,
 const IndexPage: React.FC<IndexProps> = ({ data }) => {
   const { topics, posts } = data
   return (
-    <Layout>
+    <Layout title="Home - purefun">
       <div className="topics">
         {topics.nodes.map(topic => (
           <Topic key={topic.id} topic={topic}>

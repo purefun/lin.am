@@ -15,7 +15,7 @@ interface SinglePostProps {
 const SinglePost: React.FC<SinglePostProps> = ({ data }) => {
   const { blogPost } = data
   return (
-    <Layout>
+    <Layout title={`${blogPost.title} - purefun`}>
       <article>
         <header>
           <h1 className="single-post-title">{blogPost.title}</h1>

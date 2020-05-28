@@ -44,7 +44,7 @@ interface LayoutProps {
   title: string
 }
 
-const Layout: React.FC<LayoutProps> = ({ children, title = 'purefun' }) => {
+const Layout: React.FC<LayoutProps> = ({ children, title = '' }) => {
   return (
     <div className="layout">
       <Helmet>
