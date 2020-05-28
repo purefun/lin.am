@@ -29,6 +29,9 @@ module.exports = (pluginOptions) => {
         resolve: 'gatsby-transformer-sharp',
       },
       {
+        resolve: 'gatsby-plugin-sass',
+      },
+      {
         resolve: 'gatsby-plugin-page-creator',
         options: {
           path: `${__dirname}/src/pages`,

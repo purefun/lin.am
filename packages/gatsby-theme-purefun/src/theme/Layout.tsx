@@ -1,6 +1,7 @@
 import React from 'react'
 import 'normalize.css'
 import css from 'styled-jsx/css'
+import { Helmet } from 'react-helmet'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import './style.scss'
@@ -39,10 +40,16 @@ const styles = css`
     }
   }
 `
+interface LayoutProps {
+  title: string
+}
 
-export default function Layout({ children })  {
+const Layout: React.FC<LayoutProps> = ({ children, title = 'purefun' }) => {
   return (
     <div className="layout">
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <nav><Navbar /></nav>
       <main>{children}</main>
       <footer><Footer /></footer>
@@ -50,3 +57,5 @@ export default function Layout({ children })  {
     </div>
   )
 }
+
+export default Layout
