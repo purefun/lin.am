@@ -31,7 +31,6 @@ const styles = css`
     justify-content: center;
     padding: 1rem 0;
     color: var(--color-gray-300);
-    font-size: 1.4rem;
   }
 
   @media (min-width: 800px) {

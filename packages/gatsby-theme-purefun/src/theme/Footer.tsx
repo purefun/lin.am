@@ -11,6 +11,7 @@ const Footer: React.FC<{}> = () => (
     <style jsx>{`
       ul {
         display: flex;
+        font-size: 1.2rem;
       }
       li {
         list-style-type: none;

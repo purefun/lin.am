@@ -45,12 +45,12 @@ const ToggleDarkMode: React.FC<{}> = () => {
           display: block;
           margin: 0;
           background: linear-gradient(
-            -45deg,
-            var(--color-bg),
-            var(--color-bg) 50%,
-            var(--color-primary) 50%
+            135deg,
+            var(--color-primary),
+            var(--color-primary) 53%,
+            var(--color-bg-reverse) 53%
           );
-          border: 1px solid var(--color-primary);
+          border: 1px solid var(--color-bg-reverse);
           cursor: pointer;
           outline: 0;
           border-radius: 100px;
