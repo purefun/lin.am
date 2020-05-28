@@ -13,6 +13,8 @@
 - name: macOS
   icon: ./icons/macos-512.png
 
-
 - name: CLI
   icon: ./icons/cli-512.png
+
+- name: Misc
+  icon: ./icons/misc-512-v3.png
