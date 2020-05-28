@@ -13,6 +13,17 @@ html[color-scheme=light] {
   --fenced-bg: #FBFBFB;
   --fenced-text: #393a34;
   --fenced-title-border: #ebedf0;
+  --fenced-highlight-line-bg: rgba(0,0,0, 0.05);
+  --fenced-copy-button-bg: rgba(0,0,0, 0.05);
+  --fenced-comment: #aaa;
+  --fenced-red: #D08770;
+  --fenced-orange: orange;
+  --fenced-yellow: yellow;
+  --fenced-green: #257F6B;
+  --fenced-cyan: cyan;
+  --fenced-blue: #81A1C1;
+  --fenced-purple: #B48EAD;
+  --fenced-magenta: magenta;
 }
 
 html[color-scheme=dark] {
@@ -23,13 +34,24 @@ html[color-scheme=dark] {
   --color-gray-600: #1e1e1e;
 
   --color-bg: #212325;
-  --color-text: #8E8E8E;
+  --color-text: #C3C1C1;
   --color-logo-text: black;
 
   // prism theme
-  --fenced-bg: #282a36;
-  --fenced-text: #393a34;
-  --fenced-title-border: #ebedf0;
+  --fenced-bg: #2E3440;
+  --fenced-text: #ccc;
+  --fenced-title-border: #434C5E;
+  --fenced-highlight-line-bg: rgba(76, 86, 106, 0.5);
+  --fenced-copy-button-bg: rgba(76, 86, 106, 0.5);
+  --fenced-comment: #888;
+  --fenced-red: #D08770;
+  --fenced-orange: orange;
+  --fenced-yellow: yellow;
+  --fenced-green: #A3BE8C;
+  --fenced-cyan: cyan;
+  --fenced-blue: #81A1C1;
+  --fenced-purple: #B48EAD;
+  --fenced-magenta: magenta;
 }
 
 * {

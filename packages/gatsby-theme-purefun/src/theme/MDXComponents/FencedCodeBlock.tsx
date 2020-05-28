@@ -106,14 +106,14 @@ const styles = css`
   padding: 0 1.6rem 0 calc(1.6rem - 2px);
   margin: 0 -1.6rem;
   border-left: 2px solid var(--color-primary);
-  background: rgba(0,0,0,0.05);
+  background: var(--fenced-highlight-line-bg);
 }
 
 .copyButton {
-  background: rgba(0,0,0, 0.05);
+  background: var(--fenced-copy-button-bg);
   border: none;
   border-radius: 4px;
-  color: green;
+  color: var(--fenced-text);
   cursor: pointer;
   opacity: 1;
   outline: none;
