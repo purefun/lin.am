@@ -15,7 +15,7 @@ interface SinglePostProps {
 const SinglePost: React.FC<SinglePostProps> = ({ data }) => {
   const { blogPost } = data
   return (
-    <Layout title={`${blogPost.title} - purefun`}>
+    <Layout title={blogPost.title}>
       <article>
         <header>
           <h1 className="single-post-title">{blogPost.title}</h1>
@@ -39,7 +39,7 @@ const SinglePost: React.FC<SinglePostProps> = ({ data }) => {
           header {
           }
           .date {
-            color: var(--color-gray-300);
+            color: var(--color-gray-500);
           }
         `}</style>
       </article>

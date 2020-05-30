@@ -31,7 +31,7 @@ export default function Navbar() {
           padding: 3rem 0;
         }
         .desc {
-          color: var(--color-gray-300);
+          color: var(--color-gray-500);
           font-size: 1.4rem;
           margin-top: 0.4rem;
         }

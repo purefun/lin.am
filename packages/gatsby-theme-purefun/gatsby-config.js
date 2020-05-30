@@ -78,6 +78,13 @@ module.exports = (pluginOptions) => {
         }
       },
       {
+        resolve: 'gatsby-source-filesystem',
+        options: {
+          path: 'content/jargons',
+          name: 'content/jargons',
+        },
+      },
+      {
         resolve: 'gatsby-plugin-webfonts',
         options: {
           formats: ['woff2'],

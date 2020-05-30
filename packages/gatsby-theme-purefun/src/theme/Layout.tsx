@@ -31,7 +31,7 @@ const styles = css`
     display: flex;
     justify-content: center;
     padding: 1rem 0;
-    color: var(--color-gray-300);
+    color: var(--color-gray-500);
   }
 
   @media (min-width: 800px) {
@@ -44,11 +44,11 @@ interface LayoutProps {
   title: string
 }
 
-const Layout: React.FC<LayoutProps> = ({ children, title = '' }) => {
+const Layout: React.FC<LayoutProps> = ({ children, title }) => {
   return (
     <div className="layout">
       <Helmet>
-        <title>{title}</title>
+        <title>{title} - purefun</title>
       </Helmet>
       <nav><Navbar /></nav>
       <main>{children}</main>

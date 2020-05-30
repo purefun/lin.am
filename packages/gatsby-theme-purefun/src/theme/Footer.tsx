@@ -20,11 +20,11 @@ const Footer: React.FC<{}> = () => (
 
       a {
         text-decoration: none;
-        color: var(--color-gray-300);
+        color: var(--color-gray-500);
       }
 
       a:hover {
-        border-bottom: 1px solid var(--color-gray-300);
+        border-bottom: 1px solid var(--color-gray-500);
       }
     `}</style>
   </div>

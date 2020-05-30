@@ -74,7 +74,7 @@ const Post: React.FC<{ date: string, to: string, title: string }> = ({ date, to,
       .date {
         font-family: 'Roboto Mono';
         font-size: 1.2rem;
-        color: var(--color-gray-300);
+        color: var(--color-gray-500);
         flex: 0 0 ${topicAsideWidth};
         text-align: center;
         line-height: 1.8;
@@ -89,7 +89,7 @@ const Post: React.FC<{ date: string, to: string, title: string }> = ({ date, to,
 const IndexPage: React.FC<IndexProps> = ({ data }) => {
   const { topics, posts } = data
   return (
-    <Layout title="Home - purefun">
+    <Layout title="Home">
       <div className="topics">
         {topics.nodes.map(topic => (
           <Topic key={topic.id} topic={topic}>

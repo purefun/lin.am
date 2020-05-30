@@ -1,6 +1,6 @@
 @mixin HeadingsIndicator {
   font-size: 1.2rem;
-  color: var(--color-gray-300);
+  color: var(--color-gray-500);
   font-weight: normal;
   display: inline-block;
   width: 2.4rem;
@@ -111,7 +111,7 @@ h1.single-post-title {
   a {
     color: var(--color-text);
     text-decoration: none;
-    border-bottom: 1px dotted var(--color-gray-300);
+    border-bottom: 1px dotted var(--color-gray-500);
 
     &:hover {
       border-bottom-style: solid;
