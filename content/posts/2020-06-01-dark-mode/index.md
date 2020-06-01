@@ -5,20 +5,20 @@ topic: JavaScript
 ---
 
 Apple 在 2018 年推出的 macOS Mojave (10.14) 时最早引入了深色模式。在 2019 年的
-iOS 13 中也同样带来了深色模式。在 2019 年 10 月 7 日发布的 macOS Catalina
-(10.15) 开始支持自动切换深色和浅色模式。
+iOS 13 中也同样带来了深色模式。2019 年 10 月 7 日发布的 macOS Catalina (10.15)
+开始支持自动切换深色和浅色模式。
 
 ## Web 深色模式需求
 
 1. 根据操作系统的配色，网页应显示对应配色；
-2. 在页面打开的情况下，操作系统的配色有变化，网页的配色可以跟随操作系统的变化；
-3. 用户可以在页面中手动控制配色方案，并记住用户的选择。
+2. 在页面打开的情况下，操作系统的配色有变化，网页的配色应跟随操作系统变化；
+3. 用户可以在页面中手动控制配色方案，并记住用户的最后一次选择。
 
 ## 需求分析
 
 > 1. 根据操作系统的配色，网页应显示对应配色；
 
-该需求我们需要知道浏览器对系统配色的 API：
+该需求依赖浏览器获取配色相关的 API：
 
 ```css title="CSS 获取系统配色"
 body {
@@ -59,27 +59,19 @@ undefined
 
 ```
 
-> 2. 在页面打开的情况下，操作系统的配色有变化，网页的配色可以跟随操作系统的变化；
+> 2. 在页面打开的情况下，操作系统的配色有变化，网页的配色应跟随操作系统变化；
 
-监听系统配色的变化的 API：
-
-```js
-const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-
-darkModeMediaQuery.addListener((e) => {
-  const isDarkMode = e.matches;
-});
-```
+监听系统配色变化 API：
 
 ```js
 const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
 darkModeMediaQuery.addListener((e) => {
-  const isDarkMode = e.matches;
+  const isDarkMode = e.matches; // true or false
 });
 ```
 
-> 3. 用户可以在页面中手动控制配色方案，并记住用户的选择。
+> 3. 用户可以在页面中手动控制配色方案，并记住用户的最后一次选择。
 
 用户可以在页面中手动控制配色方案，这打破了操作系统和网页的配色绑定关系。需要在中间
 引入新的状态来集中管理。而该状态的管理最好和 Web 框架无关。且该状态还需要被 CSS
@@ -121,6 +113,7 @@ darkModeMediaQuery.addListener((e) => {
        event.detail.theme === 'dark';
      })
    ```
+   通过 `CustomEvent` 隐藏配色监听的细节，更方便拓展为多主题配色。
 
 ## 完整代码
 
