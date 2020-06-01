@@ -79,7 +79,10 @@ h1.single-post-title {
     // border-radius: 4px;
   }
   // inline codes
-  > p code {
+  > p code,
+  > ul li code,
+  > ol li code,
+  {
     background: var(--color-gray-200);
     border-radius: 4px;
     font-size: 1.4rem;

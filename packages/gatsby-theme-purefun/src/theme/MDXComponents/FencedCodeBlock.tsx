@@ -3,6 +3,8 @@ import Highlight, {defaultProps} from 'prism-react-renderer';
 import css from 'styled-jsx/css';
 import Clipboard from 'clipboard';
 import rangeParser from 'parse-numeric-range';
+import {mdx} from '@mdx-js/react'
+import {LiveProvider, LiveEditor, LiveError, LivePreview} from 'react-live'
 import { theme } from './code-block-theme';
 
 const highlightLinesRangeRegex = /{([\d,-]+)}/;
@@ -133,7 +135,7 @@ const styles = css`
 }
 `
 
-export default ({children, className: languageClassName, metastring}) => {
+export default ({children, className: languageClassName, metastring, live, render}) => {
   const [showCopied, setShowCopied] = useState(false);
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
@@ -231,6 +233,31 @@ export default ({children, className: languageClassName, metastring}) => {
 
     setTimeout(() => setShowCopied(false), 2000);
   };
+
+  if (live) {
+    return (
+      <div>
+        <LiveProvider
+          code={children.trim()}
+          scope={{mdx}}
+        >
+          <LivePreview />
+          <LiveEditor />
+          <LiveError />
+        </LiveProvider>
+      </div>
+    )
+  }
+
+  if (render) {
+    return (
+      <div>
+        <LiveProvider code={children}>
+          <LivePreview />
+        </LiveProvider>
+      </div>
+    )
+  }
 
   return (
     <Highlight
