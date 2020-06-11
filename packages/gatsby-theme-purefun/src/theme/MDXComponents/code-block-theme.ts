@@ -70,7 +70,7 @@ export const theme: PrismTheme = {
     {
       types: ['class-name'],
       style: {
-        color: 'var(--fenced-yellow)'
+        color: 'var(--fenced-purple)'
       }
     },
     {
