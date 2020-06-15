@@ -258,8 +258,20 @@ error$.subscribe({
 });
 
 // a fatal error
-
 ```
 
+## ajax & fromFetch
 
+```ts
+import { ajax } from 'rxjs/ajax';
+import { fromFetch } from 'rxjs/fetch';
+
+ajax
+  .getJSON('https://jsonplaceholder.typicode.com/posts')
+  .subscribe(console.log);
+
+fromFetch('https://jsonplaceholder.typicode.com/posts')
+  .subscribe(console.log);
+
+```
 1]: https://rxjs.dev/
