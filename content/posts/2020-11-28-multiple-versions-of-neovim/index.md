@@ -32,7 +32,8 @@ alias neovim="/usr/local/Cellar/neovim/HEAD-4537ff6/bin/nvim"
 自此，两个 Neovim 版本的命令分别为：
 
 ```
-nvim: 0.4.4 neovim: HEAD(0.5.0)
+nvim: 0.4.4
+neovim: HEAD(0.5.0)
 ```
 
 现在虽然拥有了两个不同版本的 Neovim，但两者共享配置文件。为了不影响日常的工作，
@@ -74,8 +75,8 @@ alias XDG_CONFIG_HOME=$HOME/.config/neovim-0.5.0 neovim="/usr/local/Cellar/neovi
 使用 `neovim` 便可启动无配置的 neovim 0.5.0，使用如下配置文件：
 
 ```
-- vimrc: ~/.config/neovim-0.5.0/nvim/init.vim home directory:
-- ~/.config/neovim-0.5.0/nvim
+- vimrc: ~/.config/neovim-0.5.0/nvim/init.vim
+- home directory: ~/.config/neovim-0.5.0/nvim
 ```
 
 现在可以开始安装配置 nvim-treesitter 等新功能了。
