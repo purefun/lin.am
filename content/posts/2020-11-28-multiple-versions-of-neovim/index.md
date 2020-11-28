@@ -59,11 +59,10 @@ Neovim:
 Desktop Group，是现在 [freedesktop.org][2] 的前生。在 freedesktop 的 [XDG Base
 Directory Specification][3] 规范中，对该环境变量做了如下规定：
 
-```
-$XDG_CONFIG_HOME defines the base directory relative to which user specific
-configuration files should be stored. If $XDG_CONFIG_HOME is either not set or
-empty, a default equal to $HOME/.config should be used. 
-```
+> $XDG_CONFIG_HOME defines the base directory relative to which user specific
+> configuration files should be stored. If $XDG_CONFIG_HOME is either not set or
+> empty, a default equal to $HOME/.config should be used. 
+
 
 那么在启动 Neovim 开发版本时，设置 `XDG_CONFIG_HOME` 便可改变 Neovim 配置文件路
 径。于是将上述的 alias 修改为：
