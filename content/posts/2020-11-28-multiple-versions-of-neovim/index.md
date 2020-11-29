@@ -4,11 +4,11 @@ topic: Neovim
 date: 2020-11-28
 ---
 
-Neovim 打算在 2020 的圣诞节发布0.5([Milestone][1])，一个集成 LSP、Lua 用户配置和
-Treesitter 等的大版本。在发布之前，可以通过合理的配置，体验新功能，且不影响主力
-Neovim 稳定版本的日常使用。
+Neovim 打算在 2020 的圣诞节发布 0.5([Milestone][1])，一个集成 LSP、Lua 用户配置
+和 Treesitter 等的大版本。在发布之前，可以通过合理的配置，体验新功能，且不影响主
+力 Neovim 稳定版本的日常使用。
 
-## 安装 Neovim 开发版本 (以 macOS 为例)
+## 安装 Neovim 开发版本 （以 macOS 为例）
 
 ```
 brew install --HEAD neovim
@@ -42,8 +42,8 @@ neovim: HEAD(0.5.0)
 
 ## Neovim 默认配置路径
 
-为了隔离两个 Neovim 版本的配置文件，首先需要了解 Neovim 的默认配置路径。Neovim和
-Vim 的一个明显区别是 Neovim 改变了 Vim 的默认 vimrc 文件路径和配置文件夹路径：
+为了隔离两个 Neovim 版本的配置文件，首先需要了解 Neovim 的默认配置路径。Neovim
+和Vim 的一个明显区别是 Neovim 改变了 Vim 的默认 vimrc 文件路径和配置文件夹路径：
 
 ```
 Vim:
@@ -61,7 +61,7 @@ Directory Specification][3] 规范中，对该环境变量做了如下规定：
 
 > $XDG_CONFIG_HOME defines the base directory relative to which user specific
 > configuration files should be stored. If $XDG_CONFIG_HOME is either not set or
-> empty, a default equal to $HOME/.config should be used. 
+> empty, a default equal to $HOME/.config should be used.
 
 
 那么在启动 Neovim 开发版本时，设置 `XDG_CONFIG_HOME` 便可改变 Neovim 配置文件路
