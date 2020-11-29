@@ -23,10 +23,10 @@ date: Fri, 06 Dec 2019 07:07:09 GMT
 
 ## 问题发现
 
-在使用 Vim 的日历插件 [calendar.vim](https://github.com/itchyny/calendar.vim)
+在使用 Vim 的日历插件 [calendar.vim][1]
 时，插件无法处理 Google Calendar 的 `access_token` 过期返回 401 的情况。
-calendar.vim 使用系统自带的 curl 作为 HTTP client。  
-calendar.vim 根据 [RFC2616](https://tools.ietf.org/html/rfc2616#section-6.1)
+calendar.vim 使用系统自带的 curl 作为 HTTP client。
+calendar.vim 根据 [RFC2616][2]
 把第一行做为 `Status-Line`：
 
 ```plain
@@ -49,4 +49,9 @@ content-length: 1564
 date: Fri, 06 Dec 2019 07:07:09 GMT
 ```
 
-最后给 calendar.vim 提交了一个 PR: <https://github.com/itchyny/calendar.vim/pull/155>，把 `--suppress-connect-header` 加入到 curl 的默认参数中。
+最后给 calendar.vim 提交了一个 PR: <https:
+//github.com/itchyny/calendar.vim/pull/155>，把 `--suppress-connect-header` 加入
+到 curl 的默认参数中。
+
+[1]: https://github.com/itchyny/calendar.vim
+[2]: https://tools.ietf.org/html/rfc2616#section-6.1

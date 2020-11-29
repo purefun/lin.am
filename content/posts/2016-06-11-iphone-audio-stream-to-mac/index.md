@@ -17,10 +17,10 @@ date: 2016-06-11
   3. AirPlay
   4. Lightning 数据线
 
-   3.5mm 耳机接口和蓝牙连接都非常普遍，就不再赘述。AirPlay 是指 Apple 在 2010年
-   发布的无线流播放技术。目前 Apple 设备可提供AirPlay 功能的有 AirDrop 和Apple
+   3.5mm 耳机接口和蓝牙连接都非常普遍，就不再赘述。AirPlay 是指 Apple 在 2010 年
+   发布的无线流播放技术。目前 Apple 设备可提供 AirPlay 功能的有 AirDrop 和 Apple
    TV。部分品牌音响和许多国产盒子也已经支持提供 AirPlay 功能。也可通过三方如
-   AirServer 或 Air Playit 等软件支持提供AirPlay，但效果和稳定程度没有保证。
+   AirServer 或 Air Playit 等软件支持提供 AirPlay，但效果和稳定程度没有保证。
 
   接下来，详解通过 Lightning 数据线的方式，在 Mac 上接收并播放 iPhone 的声音。
 

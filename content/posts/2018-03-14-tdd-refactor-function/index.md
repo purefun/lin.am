@@ -10,7 +10,7 @@ date: 2018-03-14
 
   当用户在登录表单输入手机号时，为用户实时将手机号进行格式化：在网络识别号和地区
   编码、地区编码和序号之间插入空格。
-  
+
   ```
   网络识别号_地区编码_序号
   188_1111_2222
@@ -46,7 +46,7 @@ date: 2018-03-14
   1. 安装 Jest: `npm install -g jest`
   2. 在目录下创建 Jest 配置文件：`touch jest.config.js`
   3. 编写一个最小单元测试：
-   
+
 ```js
 // file: minimal.test.js
 test('minimal test case', () => {
@@ -119,11 +119,11 @@ test('minimal test case', () => {
   ```js
     module.exports = function formatPhoneNumber(input) {
       const len = input.length;
-      
+
       if (len <= 3) {
         return input;
       }
-      
+
       const array = input.split('');
 
       if (len > 3) {
@@ -136,16 +136,16 @@ test('minimal test case', () => {
       return array.join('');
     }
   ```
-  
+
   再运行 `jest` 一下查看结果。此时我们可以给 `jest` 加入一个参数，当代码修改后，
   可以自动执行。这样只要保存一下文件就可以立刻看到结果反馈。
-  
+
   ```shell
   jest --watchAll
   ```
-  
+
   ![插入空格方案](./version-1-result-with-watchAll-split-window.png)
-  
+
 
 ### 方案二：三段切割
 

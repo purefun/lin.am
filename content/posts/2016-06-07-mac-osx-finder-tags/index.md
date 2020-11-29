@@ -9,11 +9,11 @@ topic: macOS
   在整理文件。
 
   而整理文件的目的又是什么？随着文件数量年复一年的增长，为了日后可以更方便快捷
-  不用太多思考的找到所需要的文件。在Windows 中，Everything 或 Listary 快速全局
+  不用太多思考的找到所需要的文件。在 Windows 中，Everything 或 Listary 快速全局
   检索文件名；OS X 有 Spotlight 和 Alfred 。
 
-  OS X Finder中的标记（Tags）功能，是在文件夹分类和文件名的基础上，提供全新维度
-  的文件整理和处理机制，在WWDC 2013 上做为 OS X 10.9 Mavericks 的 10 大新功能一
+  OS X Finder 中的标记（Tags）功能，是在文件夹分类和文件名的基础上，提供全新维度
+  的文件整理和处理机制，在 WWDC 2013 上做为 OS X 10.9 Mavericks 的 10 大新功能一
   同发布。
 
 ## 关于标记的重要知识

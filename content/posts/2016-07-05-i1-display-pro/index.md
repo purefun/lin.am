@@ -63,7 +63,7 @@ date: 2016-07-05
 
 ### 测量
 
-  显示器硬件设置：无法通过键盘调整亮度的显示器，选择「手动调整亮度、对比度和RGB
+  显示器硬件设置：无法通过键盘调整亮度的显示器，选择「手动调整亮度、对比度和 RGB
   增益，MacBook Air 选择「自动显示器控制（ADC）」
 
   ![测量](./iprofiler-measure.png)
@@ -72,8 +72,8 @@ date: 2016-07-05
   中央，按照显示步骤进行，该步骤大约 3 分钟。期间 i1Profiler 显示不同颜色和不同
   亮度，供 i1 Display Pro 采集显示信息。
 
-  ![测量示意图](./iprofiler-example-01.png) ![测量示意图
-  ](./iprofiler-example-02.png) ![测量示意图](./iprofiler-example-03.png)
+  ![测量示意图](./iprofiler-example-01.png) !『测量示意图]
+  (./iprofiler-example-02.png) ![测量示意图](./iprofiler-example-03.png)
 
 ### ICC 配置文件
 
@@ -82,9 +82,9 @@ date: 2016-07-05
 
   ![ICC 01](./iprofiler-icc-01.png) ![ICC 01](./iprofiler-icc-02.png)
 
-  备份 ICC 文件：OS X 系统偏好设置 -> 显示器 -> 颜色，在「显示描述文件」列表中
-  ，找到在上一步骤所生成的配置文件，点击右侧的「打开描述文件」，系统将调用
-  ColorSync 查看 ICC 配置文件，通过菜单栏文件中的「存储为…」选择其他位置保存ICC
+  备份 ICC 文件：OS X 系统偏好设置 -> 显示器 -> 颜色，在「显示描述文件」列表中，
+  找到在上一步骤所生成的配置文件，点击右侧的「打开描述文件」，系统将调用
+  ColorSync 查看 ICC 配置文件，通过菜单栏文件中的「存储为…」选择其他位置保存 ICC
   文件。
 
   ![ICC 描述文件](./icc-profile.png) ![ICC 描述文件](./icc-save-as.png)

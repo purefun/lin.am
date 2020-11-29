@@ -274,4 +274,3 @@ fromFetch('https://jsonplaceholder.typicode.com/posts')
   .subscribe(console.log);
 
 ```
-1]: https://rxjs.dev/

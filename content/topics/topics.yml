@@ -7,6 +7,9 @@
 - name: Node.js
   icon: ./icons/node-180.png
 
+- name: App
+  icon: ./icons/app-store-256.png
+
 - name: Markdown
   icon: ./icons/markdown-600.png
 
