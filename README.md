@@ -1,6 +1,6 @@
 <h1 align="center">purefun.io</h1>
 
-[purefun.io](home) is a blog using Gatsby...
+[purefun.io](https://purefun.io) is a blog using Gatsby...
 
 [![Netlify Status][netlify-badge-src]][netlify-link]
 
