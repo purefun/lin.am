@@ -1,8 +1,8 @@
-- name: Neovim
-  icon: ./icons/neovim-512.png
-
 - name: JavaScript
   icon: ./icons/javascript-1052.png
+
+- name: Neovim
+  icon: ./icons/neovim-512.png
 
 - name: Node.js
   icon: ./icons/node-180.png
