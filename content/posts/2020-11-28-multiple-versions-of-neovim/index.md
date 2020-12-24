@@ -68,7 +68,7 @@ Directory Specification][3] 规范中，对该环境变量做了如下规定：
 径。于是将上述的 alias 修改为：
 
 ```sh
-alias XDG_CONFIG_HOME=$HOME/.config/neovim-0.5.0 neovim="/usr/local/Cellar/neovim/HEAD-4537ff6/bin/nvim"
+alias vim="XDG_CONFIG_HOME=$HOME/.config/neovim-0.5.0 /usr/local/Cellar/neovim/HEAD-4537ff6/bin/nvim"
 ```
 
 使用 `neovim` 便可启动无配置的 neovim 0.5.0，使用如下配置文件：
