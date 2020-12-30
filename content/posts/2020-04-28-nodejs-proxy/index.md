@@ -57,6 +57,7 @@ ObjectDefineProperty(module.exports, 'globalAgent', {
   目的。这也是这个模块 [global-agent] 所做的事情。`global-agent` 的使用方法：
 
   ```shell
+  export GLOBAL_AGENT_HTTP_PROXY=http://127.0.0.1:6152
   node -r global-agent/bootstrap [some.js]
   ```
 
