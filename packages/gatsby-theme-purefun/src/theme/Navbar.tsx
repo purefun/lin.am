@@ -1,6 +1,6 @@
-import React from 'react'
-import css from 'styled-jsx/css'
-import {Link} from 'gatsby'
+import React from "react";
+import css from "styled-jsx/css";
+import { Link } from "gatsby";
 
 const linkCSS = css.resolve`
   a {
@@ -15,14 +15,15 @@ const linkCSS = css.resolve`
   a:hover {
   }
   p {
-
   }
-`
+`;
 
 export default function Navbar() {
   return (
     <div className="nav">
-      <Link to="/" className={linkCSS.className}>purefun.io</Link>
+      <Link to="/" className={linkCSS.className}>
+        lin.am
+      </Link>
       <div className="desc">Another developer's blog</div>
       {linkCSS.styles}
       <style jsx>{`
@@ -37,5 +38,5 @@ export default function Navbar() {
         }
       `}</style>
     </div>
-  )
+  );
 }

@@ -1,10 +1,10 @@
-import React from 'react'
-import 'normalize.css'
-import css from 'styled-jsx/css'
-import { Helmet } from 'react-helmet'
-import Navbar from './Navbar'
-import Footer from './Footer'
-import './style.scss'
+import React from "react";
+import "normalize.css";
+import css from "styled-jsx/css";
+import { Helmet } from "react-helmet";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import "./style.scss";
 
 const styles = css`
   .layout {
@@ -39,23 +39,27 @@ const styles = css`
       padding: 5rem;
     }
   }
-`
+`;
 interface LayoutProps {
-  title: string
+  title: string;
 }
 
 const Layout: React.FC<LayoutProps> = ({ children, title }) => {
   return (
     <div className="layout">
       <Helmet>
-        <title>{title} - purefun</title>
+        <title>{title} - lin.am</title>
       </Helmet>
-      <nav><Navbar /></nav>
+      <nav>
+        <Navbar />
+      </nav>
       <main>{children}</main>
-      <footer><Footer /></footer>
+      <footer>
+        <Footer />
+      </footer>
       <style jsx>{styles}</style>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

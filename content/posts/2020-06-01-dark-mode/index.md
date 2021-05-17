@@ -117,7 +117,7 @@ darkModeMediaQuery.addListener((e) => {
 
 ## 完整代码
 
-Demo: <https://purefun.io/demo/dark-mode/>
+Demo: <https://lin.am/demo/dark-mode/>
 
 ```html title="dark-mode.html"
 <!DOCTYPE html>
