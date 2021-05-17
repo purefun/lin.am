@@ -1,5 +1,5 @@
 ---
-title: "Goday-01: Hello World 和 Vim 的配置"
+title: "Golang Hello World 和 Vim 的配置"
 topic: Golang
 date: 2021-01-07
 ---
