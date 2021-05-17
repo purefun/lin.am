@@ -49,9 +49,9 @@ content-length: 1564
 date: Fri, 06 Dec 2019 07:07:09 GMT
 ```
 
-最后给 calendar.vim 提交了一个 PR: <https:
-//github.com/itchyny/calendar.vim/pull/155>，把 `--suppress-connect-header` 加入
-到 curl 的默认参数中。
+最后给 calendar.vim 提交了一个 [PR][3]，把 `--suppress-connect-header` 加入 到
+curl 的默认参数中。
 
 [1]: https://github.com/itchyny/calendar.vim
 [2]: https://tools.ietf.org/html/rfc2616#section-6.1
+[3]: https://github.com/itchyny/calendar.vim/pull/155
