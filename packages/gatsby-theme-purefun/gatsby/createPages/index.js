@@ -17,7 +17,7 @@ module.exports = async ({ graphql, actions, reporter }, pluginOptions) => {
 
   const result = await graphql(`
     {
-      allBlogPost(sort: { fields: [date, title], order: DESC }, limit: 1000) {
+      allBlogPost(filter: { published: { eq: true } }, sort: { fields: [date, title], order: DESC }, limit: 1000) {
         edges {
           node {
             id

@@ -67,7 +67,7 @@ export const homeQuery = graphql`
         }
       }
     }
-    posts: allBlogPost(sort: {fields: date, order: DESC}) {
+    posts: allBlogPost(filter: { published: { eq: true } }, sort: {fields: date, order: DESC}) {
       nodes {
         id
         slug

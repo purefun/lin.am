@@ -46,28 +46,31 @@ module.exports = async (
   // normalize use of trailing slash
   slug = slug.replace(/\/*$/, `/`) /**/
 
-    const fieldData = {
-      title: node.frontmatter.title,
-      slug,
-      date: node.frontmatter.date,
-      topic: node.frontmatter.topic,
-    }
+  const published = node.frontmatter.published
 
-    debug('post fields', fieldData)
-
-    const mdxPostId = createNodeId(`${node.id} >>> MdxBlogPost`)
-    await createNode({
-      ...fieldData,
-      // Required fields.
-      id: mdxPostId,
-      parent: node.id,
-      children: [],
-      internal: {
-        type: `MdxBlogPost`,
-        contentDigest: createContentDigest(fieldData),
-        content: JSON.stringify(fieldData),
-        description: `Mdx implementation of the BlogPost interface`,
-      },
-    })
-    createParentChildLink({ parent: node, child: getNode(mdxPostId) })
+  const fieldData = {
+    title: node.frontmatter.title,
+    slug,
+    date: node.frontmatter.date,
+    topic: node.frontmatter.topic,
+    published:  published === null || published === undefined ? true : published,
   }
+
+  debug('post fields', fieldData)
+
+  const mdxPostId = createNodeId(`${node.id} >>> MdxBlogPost`)
+  await createNode({
+    ...fieldData,
+    // Required fields.
+    id: mdxPostId,
+    parent: node.id,
+    children: [],
+    internal: {
+      type: `MdxBlogPost`,
+      contentDigest: createContentDigest(fieldData),
+      content: JSON.stringify(fieldData),
+      description: `Mdx implementation of the BlogPost interface`,
+    },
+  })
+  createParentChildLink({ parent: node, child: getNode(mdxPostId) })
+}

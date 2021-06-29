@@ -24,6 +24,7 @@ module.exports = ({ actions, schema }) => {
       slug: String!
       date: Date! @dateformat
       modified: Date @dateformat
+      published: Boolean!
       topic: String!
   }`)
 
@@ -41,6 +42,7 @@ module.exports = ({ actions, schema }) => {
         date: { type: `Date!`, extensions: { dateformat: {} } },
         modified: { type: `Date`, extensions: { dateformat: {} } },
         topic: { type: 'String!' },
+        published: { type: "Boolean!" },
         body: {
           type: `String!`,
           resolve: mdxResolverPassthrough(`body`),
