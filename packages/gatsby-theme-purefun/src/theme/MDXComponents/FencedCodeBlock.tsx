@@ -5,7 +5,11 @@ import rangeParser from 'parse-numeric-range';
 import {mdx} from '@mdx-js/react'
 import {LiveProvider, LiveEditor, LiveError, LivePreview} from 'react-live'
 import { theme } from './code-block-theme';
+import Prism from "prism-react-renderer/prism";
 import './FencedCodeBlock.scss';
+
+(typeof global !== "undefined" ? global : window).Prism = Prism;
+require("prismjs/components/prism-java");
 
 const highlightLinesRangeRegex = /{([\d,-]+)}/;
 const getHighlightDirectiveRegex = (
