@@ -1,0 +1,20 @@
+.footer-inner {
+  ul {
+    display: flex;
+    font-size: 1.2rem;
+  }
+  li {
+    list-style-type: none;
+    margin: 0 1.8rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color-gray-500);
+  }
+
+  a:hover {
+    border-bottom: 1px solid var(--color-gray-500);
+  }
+
+}

@@ -1,32 +1,31 @@
 interface Post {
-  id: string
-  slug: string
-  title: string
-  topic: string
-  date: string
-  body: string
+  id: string;
+  slug: string;
+  title: string;
+  topic: string;
+  date: string;
+  body: string;
 }
 
 interface TopicProps {
-  id: string
-  name: string
+  id: string;
+  name: string;
   icon: {
     childImageSharp: {
       fixed: {
-        src: string
-      }
-    }
-  }
+        src: string;
+      };
+    };
+  };
 }
 
 interface IndexProps {
   data: {
     topics: {
-      nodes: [TopicProps],
-    },
+      nodes: [TopicProps];
+    };
     posts: {
-      nodes: [Post]
-    }
-  }
+      nodes: [Post];
+    };
+  };
 }
-

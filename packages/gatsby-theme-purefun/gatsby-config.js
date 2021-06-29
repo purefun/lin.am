@@ -36,9 +36,6 @@ module.exports = (pluginOptions) => {
         resolve: "gatsby-plugin-typescript",
       },
       {
-        resolve: "gatsby-plugin-styled-jsx",
-      },
-      {
         resolve: "gatsby-plugin-mdx",
         options: {
           extensions: [".mdx", ".md"],
@@ -75,13 +72,6 @@ module.exports = (pluginOptions) => {
         options: {
           path: pluginOptions.contentPath || `content/posts`,
           name: pluginOptions.contentPath || `content/posts`,
-        },
-      },
-      {
-        resolve: "gatsby-source-filesystem",
-        options: {
-          path: "content/jargons",
-          name: "content/jargons",
         },
       },
       {

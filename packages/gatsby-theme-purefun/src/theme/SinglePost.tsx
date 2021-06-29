@@ -5,6 +5,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import MDXComponents from './MDXComponents';
 import Layout from './Layout'
 import './markdown.scss'
+import './SinglePost.scss'
 
 interface SinglePostProps {
   data: {
@@ -16,7 +17,7 @@ const SinglePost: React.FC<SinglePostProps> = ({ data }) => {
   const { blogPost } = data
   return (
     <Layout title={blogPost.title}>
-      <article>
+      <article className="article">
         <header>
           <h1 className="single-post-title">{blogPost.title}</h1>
           <div className="meta">
@@ -31,17 +32,6 @@ const SinglePost: React.FC<SinglePostProps> = ({ data }) => {
             </MDXProvider>
           </div>
         </div>
-        <style jsx>{`
-          article {
-            max-width: 80rem;
-            margin: 0 auto;
-          }
-          header {
-          }
-          .date {
-            color: var(--color-gray-500);
-          }
-        `}</style>
       </article>
     </Layout>
   )

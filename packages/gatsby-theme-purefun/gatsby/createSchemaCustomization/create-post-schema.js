@@ -17,7 +17,7 @@ const mdxResolverPassthrough = fieldName => async (
 
 module.exports = ({ actions, schema }) => {
   const { createTypes } = actions
-  createTypes(`interface BlogPost @nodeInterface {
+  createTypes(`interface BlogPost implements Node {
       id: ID!
       title: String!
       body: String!

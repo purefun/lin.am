@@ -1,11 +1,11 @@
 import React, {useEffect, useState, useRef} from 'react';
 import Highlight, {defaultProps} from 'prism-react-renderer';
-import css from 'styled-jsx/css';
 import Clipboard from 'clipboard';
 import rangeParser from 'parse-numeric-range';
 import {mdx} from '@mdx-js/react'
 import {LiveProvider, LiveEditor, LiveError, LivePreview} from 'react-live'
 import { theme } from './code-block-theme';
+import './FencedCodeBlock.scss';
 
 const highlightLinesRangeRegex = /{([\d,-]+)}/;
 const getHighlightDirectiveRegex = (
@@ -76,64 +76,6 @@ const highlightDirectiveRegex = (lang: string) => {
   }
 };
 const codeBlockTitleRegex = /title=".*"/;
-
-const styles = css`
-.codeBlockWrapper {
-  font-size: 1.4rem;
-}
-.codeBlockContent {
-  position: relative;
-}
-
-.codeBlockTitle {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-bottom: 1px solid var(--fenced-title-border);
-  font-weight: bold;
-  padding: 0.75rem 1.6rem;
-  overflow: auto;
-}
-
-.codeBlock {
-  overflow: auto;
-  border-radius: 8px;
-}
-
-.codeBlockWithTitle {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.highlight-code-line {
-  padding: 0 1.6rem 0 calc(1.6rem - 2px);
-  margin: 0 -1.6rem;
-  border-left: 2px solid var(--color-primary);
-  background: var(--fenced-highlight-line-bg);
-}
-
-.copyButton {
-  background: var(--fenced-copy-button-bg);
-  border: none;
-  border-radius: 4px;
-  color: var(--fenced-text);
-  cursor: pointer;
-  opacity: 1;
-  outline: none;
-  padding: 0.4rem 0.5rem;
-  position: absolute;
-  right: 0.8rem;
-  top: 0.8rem;
-  font-size: 1.2rem;
-}
-
-.codeBlockLines {
-  font-size: inherit;
-  white-space: pre;
-  float: left;
-  min-width: 100%;
-  padding: 1.6rem;
-}
-`
 
 export default ({children, className: languageClassName, metastring, live, render}) => {
   const [showCopied, setShowCopied] = useState(false);
@@ -308,7 +250,6 @@ export default ({children, className: languageClassName, metastring, live, rende
               </div>
             </div>
           </div>
-          <style jsx>{styles}</style>
         </div>
       )}
     </Highlight>
