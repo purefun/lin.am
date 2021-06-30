@@ -1,3 +1,6 @@
+- name: Java
+  icon: ./icons/java-128.png
+
 - name: Golang
   icon: ./icons/golang.png
 
