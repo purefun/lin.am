@@ -14,7 +14,7 @@
     "packages/*"
   ],
   "dependencies": {
-    "gatsby": "^3.8.0",
+    "gatsby": "^4.25.7",
     "gatsby-theme-purefun": "^1.0.0"
   },
   "devDependencies": {
